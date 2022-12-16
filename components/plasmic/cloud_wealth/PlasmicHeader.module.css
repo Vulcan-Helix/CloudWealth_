@@ -1,0 +1,352 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  background: none;
+  position: relative;
+  box-shadow: 0px 10px 16px 0px #00000033;
+  transform: translateX(0px) translateY(0px) translateZ(0px);
+  max-height: 81px;
+  min-width: 0;
+  min-height: 0;
+  padding: 0px;
+}
+.navigation {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 15px 8px;
+}
+.img {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 190px;
+  transform: translateX(129px) translateY(-10px) translateZ(0px);
+  flex-shrink: 0;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.navigationItems {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 462px;
+  height: auto;
+  max-width: 100%;
+  flex-shrink: 0;
+  padding: 8px;
+}
+.navigationItems2 {
+  flex-direction: row;
+  width: 500px;
+  height: auto;
+  display: flex;
+  transform: translateX(200px) translateY(6px) translateZ(0px);
+  padding-right: 45px;
+  align-self: center;
+  padding-left: 0px;
+  position: relative;
+  left: auto;
+  top: auto;
+  flex-shrink: 0;
+}
+.navigationItems2 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: calc(0px - 29px);
+  width: calc(100% + 29px);
+}
+.navigationItems2 > :global(.__wab_flex-container) > *,
+.navigationItems2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.navigationItems2 > :global(.__wab_flex-container) > picture > img,
+.navigationItems2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 29px;
+}
+.text__sIJH {
+  display: block;
+  font-size: 14px;
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+}
+.about {
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.about > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: calc(0px - 13px);
+  height: calc(100% + 13px);
+}
+.about > :global(.__wab_flex-container) > *,
+.about > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.about > :global(.__wab_flex-container) > picture > img,
+.about > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-top: 13px;
+}
+.text__pRqvu {
+  display: block;
+  font-size: 14px;
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(20, 42, 88, 1);
+  position: relative;
+}
+.rectangle3 {
+  background: rgba(14, 91, 190, 1);
+  width: 35px;
+  height: 3px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.calculators {
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.calculators > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: calc(0px - 13px);
+  height: calc(100% + 13px);
+}
+.calculators > :global(.__wab_flex-container) > *,
+.calculators > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.calculators > :global(.__wab_flex-container) > picture > img,
+.calculators
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 13px;
+}
+.text__mlJrH {
+  display: block;
+  font-size: 14px;
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+}
+.rectangle4 {
+  background: rgba(14, 91, 190, 1);
+  width: 66px;
+  height: 3px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.features {
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.features > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: calc(0px - 13px);
+  height: calc(100% + 13px);
+}
+.features > :global(.__wab_flex-container) > *,
+.features > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.features > :global(.__wab_flex-container) > picture > img,
+.features
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 13px;
+}
+.text__d4CwD {
+  display: block;
+  font-size: 14px;
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+}
+.rectangle5 {
+  background: rgba(14, 91, 190, 1);
+  width: 50px;
+  height: 3px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.partners {
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.partners > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: calc(0px - 13px);
+  height: calc(100% + 13px);
+}
+.partners > :global(.__wab_flex-container) > *,
+.partners > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.partners > :global(.__wab_flex-container) > picture > img,
+.partners
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 13px;
+}
+.text___3KuH8 {
+  display: block;
+  font-size: 14px;
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  width: 70px;
+  padding-right: 1px;
+  align-self: auto;
+}
+.rectangle6 {
+  background: rgba(14, 91, 190, 1);
+  width: 48px;
+  height: 3px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.reachOut {
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.reachOut > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: calc(0px - 13px);
+  height: calc(100% + 13px);
+}
+.reachOut > :global(.__wab_flex-container) > *,
+.reachOut > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.reachOut > :global(.__wab_flex-container) > picture > img,
+.reachOut
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 13px;
+}
+.text__zFfKj {
+  display: block;
+  font-size: 14px;
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+}
+.rectangle7 {
+  background: rgba(14, 91, 190, 1);
+  width: 61px;
+  height: 3px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.frame1 {
+  background: rgba(14, 91, 190, 1);
+  width: 82px;
+  height: 28px;
+  display: block;
+  overflow: hidden;
+  transform: translateX(471px) translateY(10px) translateZ(0px);
+  flex-shrink: 0;
+  border-radius: 200px;
+}
+.text__cIEy {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 5px;
+  left: 25px;
+}
+.frame2 {
+  background: rgba(14, 91, 190, 1);
+  width: 82px;
+  height: 28px;
+  display: block;
+  overflow: hidden;
+  transform: translateX(491px) translateY(9px) translateZ(0px);
+  flex-shrink: 0;
+  border-radius: 200px;
+}
+.text__vVcnS {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 5px;
+  left: 17px;
+  transform: translateX(0px) translateY(0px) translateZ(0px);
+}

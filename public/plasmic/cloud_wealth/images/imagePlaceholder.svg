@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 220 218">
+  <path d="M1 1h218v217H1V1z" fill="#EFEFEF"/>
+  <path opacity=".5" transform="matrix(.70873 .70548 -.13988 .99017 1 1)" stroke="#000" d="M0-.5h307.592"/>
+  <path opacity=".5" transform="matrix(.70873 -.70548 .13988 .99017 1 218)" stroke="#000" d="M0-.5h307.592"/>
+  <path d="M1 1V0H0v1h1zm218 0h1V0h-1v1zm0 217v1h1v-1h-1zM1 218H0v1h1v-1zM1 2h218V0H1v2zm217-1v217h2V1h-2zm1 216H1v2h218v-2zM2 218V1H0v217h2z" fill="#939598"/>
+</svg>

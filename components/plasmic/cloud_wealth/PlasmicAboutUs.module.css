@@ -1,0 +1,324 @@
+.root {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: none;
+  min-width: 0;
+  min-height: 0;
+  padding: 0em 0px;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  min-height: 0;
+  margin-top: calc(0px - 0px);
+  height: calc(100% + 0px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root > :global(.__wab_flex-container) > picture > img,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-top: 0px;
+}
+.header:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.freeBox {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.figmaPaste {
+  display: block;
+  position: relative;
+  width: 1441px;
+  height: 769px;
+  flex-shrink: 0;
+}
+.gradient1 {
+  opacity: 0.439;
+  width: 1440px;
+  height: 769px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: 1px;
+  top: 0px;
+}
+.layer2 {
+  transform: translate(0.019000000000000017px, -0.401px);
+  width: 1441px;
+  height: 770px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: -1px;
+}
+.layer1 {
+  width: 1441px;
+  height: 770px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.rectangle {
+  background: url("/plasmic/cloud_wealth/images/rectangle.png") 0px 0px / 1441px 770px no-repeat;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.text__xqo6N {
+  display: block;
+  font-size: 64px;
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(20, 42, 88, 1);
+  position: absolute;
+  left: 374px;
+  top: 100px;
+}
+.text__uDAc {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 34px;
+  color: rgba(0, 0, 0, 1);
+  width: 1027px;
+  position: absolute;
+  left: 208px;
+  top: 280px;
+}
+.button:global(.__wab_instance) {
+  max-width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.svg__euU4B {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg___5UjKl {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.rectangle23 {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 19%,
+      rgba(255, 255, 255, 0) 99%
+    )
+    0% 0% / 100% 100% no-repeat;
+  transform: rotate(-180deg) skew(0.057295760414500616deg, 0deg);
+  width: 1440px;
+  height: 540px;
+  display: block;
+  transform-origin: top left;
+  position: absolute;
+  left: 1441px;
+  top: 769px;
+}
+.frame6 {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  left: 161px;
+  top: 551px;
+}
+.frame6 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: calc(0px - 82px);
+  width: calc(100% + 82px);
+}
+.frame6 > :global(.__wab_flex-container) > *,
+.frame6 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame6 > :global(.__wab_flex-container) > picture > img,
+.frame6
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 82px;
+}
+.img__sXoSb {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  box-shadow: inset 0px 0px 0px 1px rgba(146, 148, 151, 1);
+  width: 218px;
+  height: 217px;
+  display: block !important;
+  flex-shrink: 0;
+}
+.img__sXoSb > picture > img {
+  object-fit: cover;
+}
+.img__sXoSb > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.img__sMnjG {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  box-shadow: inset 0px 0px 0px 1px rgba(146, 148, 151, 1);
+  width: 219px;
+  height: 217px;
+  display: block !important;
+  flex-shrink: 0;
+}
+.img__sMnjG > picture > img {
+  object-fit: cover;
+}
+.img__sMnjG > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.img__avUrq {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  box-shadow: inset 0px 0px 0px 1px rgba(146, 148, 151, 1);
+  width: 219px;
+  height: 217px;
+  display: block !important;
+  flex-shrink: 0;
+}
+.img__avUrq > picture > img {
+  object-fit: cover;
+}
+.img__avUrq > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.img__mWzn1 {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  box-shadow: inset 0px 0px 0px 1px rgba(146, 148, 151, 1);
+  width: 218px;
+  height: 217px;
+  display: block !important;
+  flex-shrink: 0;
+}
+.img__mWzn1 > picture > img {
+  object-fit: cover;
+}
+.img__mWzn1 > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.footer:global(.__wab_instance) {
+  position: relative;
+  margin-top: calc(0px + 0px) !important;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.figmaPaste2 {
+  display: block;
+  position: relative;
+  width: 1440px;
+  height: 1442px;
+  margin-top: calc(89px + 0px) !important;
+  padding-top: 0px;
+  flex-shrink: 0;
+}
+.text__g5UnA {
+  display: block;
+  font-size: undefinedpx;
+  letter-spacing: 0em;
+  line-height: 100%;
+  width: 556px;
+  position: absolute;
+  left: 724px;
+  top: 47px;
+}
+.img__t0TWr {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  box-shadow: inset 0px 0px 0px 1px rgba(146, 148, 151, 1);
+  width: 499px;
+  height: 506px;
+  display: block !important;
+  left: 160px;
+  top: 0px;
+}
+.img__t0TWr > picture > img {
+  object-fit: cover;
+}
+.img__t0TWr > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.pill {
+  flex-direction: row;
+  background: rgba(120, 195, 241, 1);
+  width: auto;
+  height: 37px;
+  display: flex;
+  position: absolute;
+  left: 724px;
+  top: 0px;
+  border-radius: 16px;
+  padding: 9px 20px;
+}
+.pill > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.pill > :global(.__wab_flex-container) > *,
+.pill > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.pill > :global(.__wab_flex-container) > picture > img,
+.pill > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 10px;
+}
+.pill2 {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+}
+.rectangle20 {
+  background: rgba(14, 91, 190, 1);
+  width: 1440px;
+  height: 836px;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 606px;
+}
