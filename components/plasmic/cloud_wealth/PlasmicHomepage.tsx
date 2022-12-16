@@ -37,7 +37,7 @@ import {
 import Header from "../../Header"; // plasmic-import: 9KxG1LQhTfZ-fr/component
 import TextInput from "../../TextInput"; // plasmic-import: IieLbHG0mDkikF/component
 import Button from "../../Button"; // plasmic-import: hpLAsCB6dkK5a/component
-import FooterDesktop from "../../FooterDesktop"; // plasmic-import: 0g0VB3cSY0U/component
+import FooterDesktop1 from "../../FooterDesktop1"; // plasmic-import: B3-gyon6yF/component
 import CtaBlock from "../../CtaBlock"; // plasmic-import: JgQ-Rg7b-gm-q/component
 
 import { useScreenVariants as useScreenVariantshT8MqvJo0QuvrA } from "./PlasmicGlobalVariant__Desktop"; // plasmic-import: hT8MQVJo0quvrA/globalVariant
@@ -49,6 +49,12 @@ import sty from "./PlasmicHomepage.module.css"; // plasmic-import: IRFRdTpg57g_S
 
 import SearchsvgIcon from "./icons/PlasmicIcon__Searchsvg"; // plasmic-import: g-dNP8aX8yQkVc/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: LSNuBBNZXUjC6e/icon
+import DawnCheckMarksvg2Icon from "./icons/PlasmicIcon__DawnCheckMarksvg2"; // plasmic-import: uN0eLzMl3/icon
+import LightBlueCheckMarksvgIcon from "./icons/PlasmicIcon__LightBlueCheckMarksvg"; // plasmic-import: ihRk4S87I/icon
+import PotatoCheckMarksvgIcon from "./icons/PlasmicIcon__PotatoCheckMarksvg"; // plasmic-import: wtfIcxMRm/icon
+import GreyCheckMarksvgIcon from "./icons/PlasmicIcon__GreyCheckMarksvg"; // plasmic-import: A_2frXz1p/icon
+import BlueArrowWhiteBackgroundBlueBordersvgIcon from "./icons/PlasmicIcon__BlueArrowWhiteBackgroundBlueBordersvg"; // plasmic-import: kgYwOcJGat/icon
+import Line5Icon from "./icons/PlasmicIcon__Line5"; // plasmic-import: Ig28sg-IsK/icon
 
 export type PlasmicHomepage__VariantMembers = {};
 export type PlasmicHomepage__VariantsArgs = {};
@@ -66,13 +72,22 @@ export type PlasmicHomepage__OverridesType = {
   heroText1?: p.Flex<"div">;
   form?: p.Flex<"form">;
   requestADemoInput?: p.Flex<typeof TextInput>;
-  svg?: p.Flex<"svg">;
   requestADemoButton?: p.Flex<typeof Button>;
-  button?: p.Flex<typeof Button>;
   cwDashboardMockup1?: p.Flex<"div">;
   asFeaturedIn?: p.Flex<"div">;
-  img?: p.Flex<typeof p.PlasmicImg>;
-  footerDesktop?: p.Flex<typeof FooterDesktop>;
+  advisorInsert?: p.Flex<"div">;
+  yourPersonalVirtualFamilyOffice?: p.Flex<"div">;
+  futureProof2?: p.Flex<"div">;
+  pill3?: p.Flex<"div">;
+  couple1?: p.Flex<"div">;
+  keyFeaturesContainer?: p.Flex<"div">;
+  futureProof?: p.Flex<"div">;
+  pill2?: p.Flex<"div">;
+  businessman1?: p.Flex<"div">;
+  scalableMetrics?: p.Flex<"div">;
+  link?: p.Flex<"a"> & Partial<LinkProps>;
+  footerDesktop1?: p.Flex<typeof FooterDesktop1>;
+  globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital?: p.Flex<"div">;
   ctaBlock?: p.Flex<typeof CtaBlock>;
 };
 
@@ -220,11 +235,9 @@ function PlasmicHomepage__RenderFunc(props: {
                               startIcon={
                                 <React.Fragment>
                                   <SearchsvgIcon
-                                    data-plasmic-name={"svg"}
-                                    data-plasmic-override={overrides.svg}
                                     className={classNames(
                                       projectcss.all,
-                                      sty.svg
+                                      sty.svg__hpXco
                                     )}
                                     role={"img"}
                                   />
@@ -256,11 +269,9 @@ function PlasmicHomepage__RenderFunc(props: {
                             />
 
                             <Button
-                              data-plasmic-name={"button"}
-                              data-plasmic-override={overrides.button}
                               className={classNames(
                                 "__wab_instance",
-                                sty.button
+                                sty.button___4CtaJ
                               )}
                               color={"blue" as const}
                             >
@@ -311,10 +322,8 @@ function PlasmicHomepage__RenderFunc(props: {
               </h1>
 
               <p.PlasmicImg
-                data-plasmic-name={"img"}
-                data-plasmic-override={overrides.img}
                 alt={""}
-                className={classNames(sty.img)}
+                className={classNames(sty.img__lNYpn)}
                 displayHeight={
                   hasVariant(globalVariants, "desktop", "mobileOnly")
                     ? ("88px" as const)
@@ -339,12 +348,1332 @@ function PlasmicHomepage__RenderFunc(props: {
               />
             </div>
 
-            <FooterDesktop
-              data-plasmic-name={"footerDesktop"}
-              data-plasmic-override={overrides.footerDesktop}
-              className={classNames("__wab_instance", sty.footerDesktop)}
-            />
+            <div
+              data-plasmic-name={"advisorInsert"}
+              data-plasmic-override={overrides.advisorInsert}
+              className={classNames(projectcss.all, sty.advisorInsert)}
+            >
+              <div
+                data-plasmic-name={"yourPersonalVirtualFamilyOffice"}
+                data-plasmic-override={
+                  overrides.yourPersonalVirtualFamilyOffice
+                }
+                className={classNames(
+                  projectcss.all,
+                  sty.yourPersonalVirtualFamilyOffice
+                )}
+              >
+                <p.Stack
+                  as={"div"}
+                  data-plasmic-name={"futureProof2"}
+                  data-plasmic-override={overrides.futureProof2}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.futureProof2)}
+                >
+                  <div
+                    data-plasmic-name={"pill3"}
+                    data-plasmic-override={overrides.pill3}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.pill3
+                    )}
+                  >
+                    {"future-proof"}
+                  </div>
+                </p.Stack>
 
+                <h2
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h2,
+                    projectcss.__wab_text,
+                    sty.h2__pZa8A
+                  )}
+                >
+                  {"Your Personal Virtual Family Office"}
+                </h2>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___3Ju
+                  )}
+                >
+                  {
+                    "All fiduciary, financial, legal and KYC tools, knowledge base and documentation accessible from a single app 24/7/365."
+                  }
+                </div>
+
+                <div className={classNames(projectcss.all, sty.freeBox__tz0Gx)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__rtuiH)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__hyjFb)}
+                    >
+                      <DawnCheckMarksvg2Icon
+                        className={classNames(projectcss.all, sty.svg__jDvTs)}
+                        role={"img"}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__roPde
+                        )}
+                      >
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+                          {
+                            <h3
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h3,
+                                projectcss.__wab_text,
+                                sty.h3__fLsbM
+                              )}
+                            >
+                              <React.Fragment>
+                                <React.Fragment>{""}</React.Fragment>
+                                {
+                                  <h5
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.h5,
+                                      projectcss.__wab_text,
+                                      sty.h5__d5GpD
+                                    )}
+                                  >
+                                    <React.Fragment>
+                                      <span
+                                        className={
+                                          "plasmic_default__all plasmic_default__span"
+                                        }
+                                        style={{ color: "#0F5CBF" }}
+                                      >
+                                        {
+                                          "Access and Distribute Documents Safely and Securely"
+                                        }
+                                      </span>
+                                    </React.Fragment>
+                                  </h5>
+                                }
+                                <React.Fragment>{""}</React.Fragment>
+                              </React.Fragment>
+                            </h3>
+                          }
+                          <React.Fragment>
+                            {
+                              "With our secure File Vault, your advisor can safely store information they wish to share with you on your password-protected files without the need traditional methods"
+                            }
+                          </React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    </div>
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___0WEei
+                      )}
+                    >
+                      <LightBlueCheckMarksvgIcon
+                        className={classNames(projectcss.all, sty.svg__yKrkK)}
+                        role={"img"}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___55R8P
+                        )}
+                      >
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+                          {
+                            <h3
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h3,
+                                projectcss.__wab_text,
+                                sty.h3__d7Nfq
+                              )}
+                            >
+                              <React.Fragment>
+                                <React.Fragment>{""}</React.Fragment>
+                                {
+                                  <h5
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.h5,
+                                      projectcss.__wab_text,
+                                      sty.h5__ll91
+                                    )}
+                                  >
+                                    <React.Fragment>
+                                      <span
+                                        className={
+                                          "plasmic_default__all plasmic_default__span"
+                                        }
+                                        style={{ color: "#0F5CBF" }}
+                                      >
+                                        {
+                                          "Communicate Safely and Securely with Verified Advisors"
+                                        }
+                                      </span>
+                                    </React.Fragment>
+                                  </h5>
+                                }
+                                <React.Fragment>{""}</React.Fragment>
+                              </React.Fragment>
+                            </h3>
+                          }
+                          <React.Fragment>
+                            {
+                              "Privacy is non-negotiable when it comes to your finances. Having access to a secure chat facility, you can now interact with your advisor securely on the system, thereby eliminating the risk of sensitive information becoming vulnerable.."
+                            }
+                          </React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    </div>
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__wchd2)}
+                    >
+                      <PotatoCheckMarksvgIcon
+                        className={classNames(projectcss.all, sty.svg__cUYg)}
+                        role={"img"}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__dsCGx
+                        )}
+                      >
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+                          {
+                            <h3
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h3,
+                                projectcss.__wab_text,
+                                sty.h3__eU5Jg
+                              )}
+                            >
+                              <React.Fragment>
+                                <React.Fragment>{""}</React.Fragment>
+                                {
+                                  <h5
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.h5,
+                                      projectcss.__wab_text,
+                                      sty.h5___6KDPj
+                                    )}
+                                  >
+                                    <React.Fragment>
+                                      <span
+                                        className={
+                                          "plasmic_default__all plasmic_default__span"
+                                        }
+                                        style={{ color: "#0F5CBF" }}
+                                      >
+                                        {"Access to Industry Leading Tools"}
+                                      </span>
+                                    </React.Fragment>
+                                  </h5>
+                                }
+                                <React.Fragment>{""}</React.Fragment>
+                              </React.Fragment>
+                            </h3>
+                          }
+                          <React.Fragment>
+                            {
+                              "With our industry leading tools, you will be able to better manage your personal wealth virtually. Attend virtual meetings, sign resolutions digitally, manage your diary, record and automatically minute virtual meetings, make amendments to your will, do scenario planning or just see how much tax you'll most likely have to pay. The possibilities are many."
+                            }
+                          </React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    </div>
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__cWict)}
+                    >
+                      <GreyCheckMarksvgIcon
+                        className={classNames(projectcss.all, sty.svg__zEx8)}
+                        role={"img"}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__onjIh
+                        )}
+                      >
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+                          {
+                            <h3
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h3,
+                                projectcss.__wab_text,
+                                sty.h3__sah7
+                              )}
+                            >
+                              <React.Fragment>
+                                <React.Fragment>{""}</React.Fragment>
+                                {
+                                  <h5
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.h5,
+                                      projectcss.__wab_text,
+                                      sty.h5__tXor
+                                    )}
+                                  >
+                                    <React.Fragment>
+                                      <span
+                                        className={
+                                          "plasmic_default__all plasmic_default__span"
+                                        }
+                                        style={{ color: "#0F5CBF" }}
+                                      >
+                                        {"Focus on Growth, Not Paperwork"}
+                                      </span>
+                                    </React.Fragment>
+                                  </h5>
+                                }
+                                <React.Fragment>{""}</React.Fragment>
+                              </React.Fragment>
+                            </h3>
+                          }
+                          <React.Fragment>
+                            {
+                              "Reduce the amount of paperwork you do by populating your details in your profile, and let our document automation do the rest. "
+                            }
+                          </React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    data-plasmic-name={"couple1"}
+                    data-plasmic-override={overrides.couple1}
+                    className={classNames(projectcss.all, sty.couple1)}
+                  />
+                </div>
+              </div>
+
+              <div
+                data-plasmic-name={"keyFeaturesContainer"}
+                data-plasmic-override={overrides.keyFeaturesContainer}
+                className={classNames(projectcss.all, sty.keyFeaturesContainer)}
+              >
+                <p.Stack
+                  as={"div"}
+                  data-plasmic-name={"futureProof"}
+                  data-plasmic-override={overrides.futureProof}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.futureProof)}
+                >
+                  <div
+                    data-plasmic-name={"pill2"}
+                    data-plasmic-override={overrides.pill2}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.pill2
+                    )}
+                  >
+                    {"future-proof"}
+                  </div>
+                </p.Stack>
+
+                <h2
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h2,
+                    projectcss.__wab_text,
+                    sty.h2___9YCyp
+                  )}
+                >
+                  {
+                    "Results-focussed Client Management for Financial Planners and Fiduciary Practitioners"
+                  }
+                </h2>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__fu14T
+                  )}
+                >
+                  {
+                    "All fiduciary, financial, legal and KYC tools, knowledge base and documentation accessible from a single app 24/7/365."
+                  }
+                </div>
+
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : false
+                ) ? (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__ezCqw)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__dMhvq)}
+                    >
+                      <DawnCheckMarksvg2Icon
+                        className={classNames(projectcss.all, sty.svg__gm9Ff)}
+                        role={"img"}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__ooSgN
+                        )}
+                      >
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+                          {
+                            <h3
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h3,
+                                projectcss.__wab_text,
+                                sty.h3__m7Cnn
+                              )}
+                            >
+                              <React.Fragment>
+                                <React.Fragment>{""}</React.Fragment>
+                                {
+                                  <h5
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.h5,
+                                      projectcss.__wab_text,
+                                      sty.h5__heubG
+                                    )}
+                                  >
+                                    <React.Fragment>
+                                      <span
+                                        className={
+                                          "plasmic_default__all plasmic_default__span"
+                                        }
+                                        style={{ color: "#0F5CBF" }}
+                                      >
+                                        {"Automated Customer KYC"}
+                                      </span>
+                                    </React.Fragment>
+                                  </h5>
+                                }
+                                <React.Fragment>{""}</React.Fragment>
+                              </React.Fragment>
+                            </h3>
+                          }
+                          <React.Fragment>
+                            {
+                              "Reduce onboarding turn-around with digitally pre-verified customers.   "
+                            }
+                          </React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    </div>
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__d0Lc)}
+                    >
+                      <LightBlueCheckMarksvgIcon
+                        className={classNames(projectcss.all, sty.svg__eee9K)}
+                        role={"img"}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__jFKx
+                        )}
+                      >
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+                          {
+                            <h3
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h3,
+                                projectcss.__wab_text,
+                                sty.h3__kvnt0
+                              )}
+                            >
+                              <React.Fragment>
+                                <React.Fragment>{""}</React.Fragment>
+                                {
+                                  <h5
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.h5,
+                                      projectcss.__wab_text,
+                                      sty.h5__p4BFs
+                                    )}
+                                  >
+                                    <React.Fragment>
+                                      <span
+                                        className={
+                                          "plasmic_default__all plasmic_default__span"
+                                        }
+                                        style={{ color: "#0F5CBF" }}
+                                      >
+                                        {"Bridge the Knowledge-Gap"}
+                                      </span>
+                                    </React.Fragment>
+                                  </h5>
+                                }
+                                <React.Fragment>{""}</React.Fragment>
+                              </React.Fragment>
+                            </h3>
+                          }
+                          <React.Fragment>
+                            {
+                              "Cross-functional, automated wizard generating up-to-date industry standard reports based on real-world scenarios and calculations."
+                            }
+                          </React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    </div>
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__sZbv5)}
+                    >
+                      <PotatoCheckMarksvgIcon
+                        className={classNames(projectcss.all, sty.svg__babyw)}
+                        role={"img"}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__dD6WD
+                        )}
+                      >
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+                          {
+                            <h3
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h3,
+                                projectcss.__wab_text,
+                                sty.h3__lgOl6
+                              )}
+                            >
+                              <React.Fragment>
+                                <React.Fragment>{""}</React.Fragment>
+                                {
+                                  <h5
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.h5,
+                                      projectcss.__wab_text,
+                                      sty.h5__mjpNg
+                                    )}
+                                  >
+                                    <React.Fragment>
+                                      <span
+                                        className={
+                                          "plasmic_default__all plasmic_default__span"
+                                        }
+                                        style={{ color: "#0F5CBF" }}
+                                      >
+                                        {"Scalable Client Management"}
+                                      </span>
+                                    </React.Fragment>
+                                  </h5>
+                                }
+                                <React.Fragment>{""}</React.Fragment>
+                              </React.Fragment>
+                            </h3>
+                          }
+                          <React.Fragment>
+                            {
+                              "Communicate, Manage KYC, Track, Record, Share Documents Instantly "
+                            }
+                          </React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    </div>
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__md5Gi)}
+                    >
+                      <GreyCheckMarksvgIcon
+                        className={classNames(projectcss.all, sty.svg___8Edlu)}
+                        role={"img"}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__zsup
+                        )}
+                      >
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+                          {
+                            <h3
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h3,
+                                projectcss.__wab_text,
+                                sty.h3___3NKl
+                              )}
+                            >
+                              <React.Fragment>
+                                <React.Fragment>{""}</React.Fragment>
+                                {
+                                  <h5
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.h5,
+                                      projectcss.__wab_text,
+                                      sty.h5__raKeN
+                                    )}
+                                  >
+                                    <React.Fragment>
+                                      <span
+                                        className={
+                                          "plasmic_default__all plasmic_default__span"
+                                        }
+                                        style={{ color: "#0F5CBF" }}
+                                      >
+                                        {"Auto-Generated Documents"}
+                                      </span>
+                                    </React.Fragment>
+                                  </h5>
+                                }
+                                <React.Fragment>{""}</React.Fragment>
+                              </React.Fragment>
+                            </h3>
+                          }
+                          <React.Fragment>
+                            {
+                              "Generate Wills, Trust Deeds, Estate Plans, Financial Plans and Scenario Plans at the click of a button"
+                            }
+                          </React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    </div>
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__lLAsG)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/cloud_wealth/images/businessman1Png.png",
+                        fullWidth: 499,
+                        fullHeight: 637,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
+                ) : null}
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__i2Cgn)}
+                  >
+                    <div
+                      data-plasmic-name={"businessman1"}
+                      data-plasmic-override={overrides.businessman1}
+                      className={classNames(projectcss.all, sty.businessman1)}
+                    />
+
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___99U6B
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__bZqGp
+                        )}
+                      >
+                        <DawnCheckMarksvg2Icon
+                          className={classNames(projectcss.all, sty.svg__undUg)}
+                          role={"img"}
+                        />
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__zt9K
+                          )}
+                        >
+                          <React.Fragment>
+                            <React.Fragment>{""}</React.Fragment>
+                            {
+                              <h3
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h3,
+                                  projectcss.__wab_text,
+                                  sty.h3__tf0Jw
+                                )}
+                              >
+                                <React.Fragment>
+                                  <React.Fragment>{""}</React.Fragment>
+                                  {
+                                    <h5
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.h5,
+                                        projectcss.__wab_text,
+                                        sty.h5___2J5Za
+                                      )}
+                                    >
+                                      <React.Fragment>
+                                        <span
+                                          className={
+                                            "plasmic_default__all plasmic_default__span"
+                                          }
+                                          style={{ color: "#0F5CBF" }}
+                                        >
+                                          {"Automated Customer KYC"}
+                                        </span>
+                                      </React.Fragment>
+                                    </h5>
+                                  }
+                                  <React.Fragment>{""}</React.Fragment>
+                                </React.Fragment>
+                              </h3>
+                            }
+                            <React.Fragment>
+                              {
+                                "Reduce onboarding turn-around with digitally pre-verified customers.   "
+                              }
+                            </React.Fragment>
+                          </React.Fragment>
+                        </div>
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__wXfTf
+                        )}
+                      >
+                        <LightBlueCheckMarksvgIcon
+                          className={classNames(projectcss.all, sty.svg__uSrJl)}
+                          role={"img"}
+                        />
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__zrO9O
+                          )}
+                        >
+                          <React.Fragment>
+                            <React.Fragment>{""}</React.Fragment>
+                            {
+                              <h3
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h3,
+                                  projectcss.__wab_text,
+                                  sty.h3__onLKh
+                                )}
+                              >
+                                <React.Fragment>
+                                  <React.Fragment>{""}</React.Fragment>
+                                  {
+                                    <h5
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.h5,
+                                        projectcss.__wab_text,
+                                        sty.h5__eE0Cw
+                                      )}
+                                    >
+                                      <React.Fragment>
+                                        <span
+                                          className={
+                                            "plasmic_default__all plasmic_default__span"
+                                          }
+                                          style={{ color: "#0F5CBF" }}
+                                        >
+                                          {"Bridge the Knowledge-Gap"}
+                                        </span>
+                                      </React.Fragment>
+                                    </h5>
+                                  }
+                                  <React.Fragment>{""}</React.Fragment>
+                                </React.Fragment>
+                              </h3>
+                            }
+                            <React.Fragment>
+                              {
+                                "Cross-functional, automated wizard generating up-to-date industry standard reports based on real-world scenarios and calculations."
+                              }
+                            </React.Fragment>
+                          </React.Fragment>
+                        </div>
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__rjSw
+                        )}
+                      >
+                        <PotatoCheckMarksvgIcon
+                          className={classNames(projectcss.all, sty.svg__vu1M)}
+                          role={"img"}
+                        />
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__d1Fko
+                          )}
+                        >
+                          <React.Fragment>
+                            <React.Fragment>{""}</React.Fragment>
+                            {
+                              <h3
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h3,
+                                  projectcss.__wab_text,
+                                  sty.h3__qnp2L
+                                )}
+                              >
+                                <React.Fragment>
+                                  <React.Fragment>{""}</React.Fragment>
+                                  {
+                                    <h5
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.h5,
+                                        projectcss.__wab_text,
+                                        sty.h5__uR7QD
+                                      )}
+                                    >
+                                      <React.Fragment>
+                                        <span
+                                          className={
+                                            "plasmic_default__all plasmic_default__span"
+                                          }
+                                          style={{ color: "#0F5CBF" }}
+                                        >
+                                          {"Scalable Client Management"}
+                                        </span>
+                                      </React.Fragment>
+                                    </h5>
+                                  }
+                                  <React.Fragment>{""}</React.Fragment>
+                                </React.Fragment>
+                              </h3>
+                            }
+                            <React.Fragment>
+                              {
+                                "Communicate, Manage KYC, Track, Record, Share Documents Instantly "
+                              }
+                            </React.Fragment>
+                          </React.Fragment>
+                        </div>
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__vypt0
+                        )}
+                      >
+                        <GreyCheckMarksvgIcon
+                          className={classNames(projectcss.all, sty.svg__xnwWi)}
+                          role={"img"}
+                        />
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__bC6S4
+                          )}
+                        >
+                          <React.Fragment>
+                            <React.Fragment>{""}</React.Fragment>
+                            {
+                              <h3
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h3,
+                                  projectcss.__wab_text,
+                                  sty.h3__aidcg
+                                )}
+                              >
+                                <React.Fragment>
+                                  <React.Fragment>{""}</React.Fragment>
+                                  {
+                                    <h5
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.h5,
+                                        projectcss.__wab_text,
+                                        sty.h5__l489D
+                                      )}
+                                    >
+                                      <React.Fragment>
+                                        <span
+                                          className={
+                                            "plasmic_default__all plasmic_default__span"
+                                          }
+                                          style={{ color: "#0F5CBF" }}
+                                        >
+                                          {"Auto-Generated Documents"}
+                                        </span>
+                                      </React.Fragment>
+                                    </h5>
+                                  }
+                                  <React.Fragment>{""}</React.Fragment>
+                                </React.Fragment>
+                              </h3>
+                            }
+                            <React.Fragment>
+                              {
+                                "Generate Wills, Trust Deeds, Estate Plans, Financial Plans and Scenario Plans at the click of a button"
+                              }
+                            </React.Fragment>
+                          </React.Fragment>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : null}
+              </div>
+
+              <div
+                data-plasmic-name={"scalableMetrics"}
+                data-plasmic-override={overrides.scalableMetrics}
+                className={classNames(projectcss.all, sty.scalableMetrics)}
+              >
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2__t3Ro7
+                    )}
+                  >
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FFFFFF" }}
+                      >
+                        {"Scalable Customer Growth:"}
+                      </span>
+                      <React.Fragment>{"\n"}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FFFFFF" }}
+                      >
+                        {"A cloud-based paperless Tool"}
+                      </span>
+                    </React.Fragment>
+                  </h2>
+                ) : null}
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__jRlFb
+                    )}
+                  >
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FFFFFF" }}
+                      >
+                        {
+                          "Manage mutliple clients from one single platform. Built with financial planners, trustees and other fiduciary practitioners in mind, CloudWealth streamlines  day-to-day management of wealth structures, regulatory tasks, and seamlessly integrates communication with clients from a single interface."
+                        }
+                      </span>
+                      <React.Fragment>{"\n"}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FFFFFF" }}
+                      >
+                        {""}
+                      </span>
+                      <React.Fragment>{"\n"}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FFFFFF" }}
+                      >
+                        {
+                          "Work from anywhere has never been more accessible than now."
+                        }
+                      </span>
+                      <React.Fragment>{"\n"}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FFFFFF" }}
+                      >
+                        {
+                          "With our MFA(Multi-Factor Authentication), you can safely and securely manage your client base from anywhere in the world."
+                        }
+                      </span>
+                    </React.Fragment>
+                  </div>
+                ) : null}
+
+                <div className={classNames(projectcss.all, sty.freeBox__dAhlb)}>
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___1QeMp)}
+                    displayHeight={
+                      hasVariant(globalVariants, "desktop", "mobileOnly")
+                        ? ("338px" as const)
+                        : ("575px" as const)
+                    }
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={
+                      hasVariant(globalVariants, "desktop", "mobileOnly")
+                        ? ("489px" as const)
+                        : ("536px" as const)
+                    }
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/cloud_wealth/images/womanWithLaptop1Png.png",
+                      fullWidth: 499,
+                      fullHeight: 506,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  {true ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__lhimk)}
+                    >
+                      {(
+                        hasVariant(globalVariants, "desktop", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <h2
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h2,
+                            projectcss.__wab_text,
+                            sty.h2__shJkg
+                          )}
+                        >
+                          {"Results-focussed Client Management for Financial"}
+                        </h2>
+                      ) : null}
+                      {(
+                        hasVariant(globalVariants, "desktop", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__k75Fb
+                          )}
+                        >
+                          {
+                            "All fiduciary, financial, legal and KYC tools, knowledge base and documentation accessible from a single app 24/7/365. All fiduciary, financial, legal and KYC tools, knowledge base and documentation accessible from a single app 24/7/365.\n\nAll fiduciary, financial, legal and KYC tools, knowledge base and documentation accessible from a single app 24/7/365.All fiduciary, financial, legal and KYC tools, knowledge base and documentation accessible from a single app 24/7/365.\n\n"
+                          }
+                        </div>
+                      ) : null}
+
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__euFhl
+                        )}
+                        color={"red" as const}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___7VLn8
+                          )}
+                        >
+                          {"View Our Documentation"}
+                        </div>
+                      </Button>
+
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___3O3S5
+                          )}
+                        >
+                          <BlueArrowWhiteBackgroundBlueBordersvgIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___7AYN
+                            )}
+                            role={"img"}
+                          />
+
+                          <p.PlasmicLink
+                            data-plasmic-name={"link"}
+                            data-plasmic-override={overrides.link}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.a,
+                              projectcss.__wab_text,
+                              sty.link
+                            )}
+                            component={Link}
+                            platform={"nextjs"}
+                          >
+                            {"Sign Up Now"}
+                          </p.PlasmicLink>
+                        </div>
+                      ) : null}
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+
+              <FooterDesktop1
+                data-plasmic-name={"footerDesktop1"}
+                data-plasmic-override={overrides.footerDesktop1}
+                className={classNames("__wab_instance", sty.footerDesktop1)}
+              />
+
+              <div className={classNames(projectcss.all, sty.freeBox__lNnYx)}>
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__aoJ5Y
+                    )}
+                  >
+                    {
+                      "Privacy Policy            Terms & Conditions            Cookie Policy"
+                    }
+                  </div>
+                ) : null}
+              </div>
+
+              <Line5Icon
+                className={classNames(projectcss.all, sty.svg__nKyt)}
+                role={"img"}
+              />
+
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
+                <div
+                  data-plasmic-name={
+                    "globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital"
+                  }
+                  data-plasmic-override={
+                    overrides.globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital
+                  }
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital
+                  )}
+                >
+                  {
+                    "Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures. Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate integrated processes through technically sound intellectual capital. "
+                  }
+                </div>
+              ) : null}
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__djWyh
+                  )}
+                >
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#000000" }}
+                    >
+                      {"Privacy Policy-Terms & Conditions  Cookie Policy"}
+                    </span>
+                  </React.Fragment>
+                </div>
+              ) : null}
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : false
+              ) ? (
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__qs4Pt
+                  )}
+                >
+                  {
+                    "Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures. Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate integrated processes through technically sound intellectual capital. "
+                  }
+                </div>
+              ) : null}
+            </div>
+
+            {(
+              hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+            ) ? (
+              <div className={classNames(projectcss.all, sty.freeBox__rRBp)}>
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__zagYo
+                    )}
+                  >
+                    {"Home\n\nAbout\n\nCalculators\n\nFeatures\n\nPartners"}
+                  </div>
+                ) : null}
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__feEVn
+                    )}
+                  >
+                    {
+                      "Estate Planning\n\nFinancial Planning\n\nFiduciary Services\n\nProducts\n\nResources\n"
+                    }
+                  </div>
+                ) : null}
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__u4Vpu
+                    )}
+                  >
+                    {
+                      "Our Technology\n\nDocumentation\n\nPresentations\n\nTutorials\n\nVersion History"
+                    }
+                  </div>
+                ) : null}
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___1F8A2
+                    )}
+                  >
+                    {"Home\n\nAbout\n\nCalculators\n\nFeatures\n\nPartners"}
+                  </div>
+                ) : null}
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__dlNa0
+                    )}
+                  >
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#000000" }}
+                      >
+                        {"dsdfsd"}
+                      </span>
+                    </React.Fragment>
+                  </div>
+                ) : null}
+              </div>
+            ) : null}
             {true ? (
               <CtaBlock
                 data-plasmic-name={"ctaBlock"}
@@ -367,13 +1696,22 @@ const PlasmicDescendants = {
     "heroText1",
     "form",
     "requestADemoInput",
-    "svg",
     "requestADemoButton",
-    "button",
     "cwDashboardMockup1",
     "asFeaturedIn",
-    "img",
-    "footerDesktop",
+    "advisorInsert",
+    "yourPersonalVirtualFamilyOffice",
+    "futureProof2",
+    "pill3",
+    "couple1",
+    "keyFeaturesContainer",
+    "futureProof",
+    "pill2",
+    "businessman1",
+    "scalableMetrics",
+    "link",
+    "footerDesktop1",
+    "globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital",
     "ctaBlock"
   ],
   header: ["header"],
@@ -382,21 +1720,55 @@ const PlasmicDescendants = {
     "heroText1",
     "form",
     "requestADemoInput",
-    "svg",
     "requestADemoButton",
-    "button",
     "cwDashboardMockup1"
   ],
   heroText1: ["heroText1"],
-  form: ["form", "requestADemoInput", "svg", "requestADemoButton", "button"],
-  requestADemoInput: ["requestADemoInput", "svg", "requestADemoButton"],
-  svg: ["svg"],
+  form: ["form", "requestADemoInput", "requestADemoButton"],
+  requestADemoInput: ["requestADemoInput", "requestADemoButton"],
   requestADemoButton: ["requestADemoButton"],
-  button: ["button"],
   cwDashboardMockup1: ["cwDashboardMockup1"],
-  asFeaturedIn: ["asFeaturedIn", "img"],
-  img: ["img"],
-  footerDesktop: ["footerDesktop"],
+  asFeaturedIn: ["asFeaturedIn"],
+  advisorInsert: [
+    "advisorInsert",
+    "yourPersonalVirtualFamilyOffice",
+    "futureProof2",
+    "pill3",
+    "couple1",
+    "keyFeaturesContainer",
+    "futureProof",
+    "pill2",
+    "businessman1",
+    "scalableMetrics",
+    "link",
+    "footerDesktop1",
+    "globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital"
+  ],
+  yourPersonalVirtualFamilyOffice: [
+    "yourPersonalVirtualFamilyOffice",
+    "futureProof2",
+    "pill3",
+    "couple1"
+  ],
+  futureProof2: ["futureProof2", "pill3"],
+  pill3: ["pill3"],
+  couple1: ["couple1"],
+  keyFeaturesContainer: [
+    "keyFeaturesContainer",
+    "futureProof",
+    "pill2",
+    "businessman1"
+  ],
+  futureProof: ["futureProof", "pill2"],
+  pill2: ["pill2"],
+  businessman1: ["businessman1"],
+  scalableMetrics: ["scalableMetrics", "link"],
+  link: ["link"],
+  footerDesktop1: ["footerDesktop1"],
+  globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital:
+    [
+      "globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital"
+    ],
   ctaBlock: ["ctaBlock"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -409,13 +1781,22 @@ type NodeDefaultElementType = {
   heroText1: "div";
   form: "form";
   requestADemoInput: typeof TextInput;
-  svg: "svg";
   requestADemoButton: typeof Button;
-  button: typeof Button;
   cwDashboardMockup1: "div";
   asFeaturedIn: "div";
-  img: typeof p.PlasmicImg;
-  footerDesktop: typeof FooterDesktop;
+  advisorInsert: "div";
+  yourPersonalVirtualFamilyOffice: "div";
+  futureProof2: "div";
+  pill3: "div";
+  couple1: "div";
+  keyFeaturesContainer: "div";
+  futureProof: "div";
+  pill2: "div";
+  businessman1: "div";
+  scalableMetrics: "div";
+  link: "a";
+  footerDesktop1: typeof FooterDesktop1;
+  globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital: "div";
   ctaBlock: typeof CtaBlock;
 };
 
@@ -485,13 +1866,27 @@ export const PlasmicHomepage = Object.assign(
     heroText1: makeNodeComponent("heroText1"),
     form: makeNodeComponent("form"),
     requestADemoInput: makeNodeComponent("requestADemoInput"),
-    svg: makeNodeComponent("svg"),
     requestADemoButton: makeNodeComponent("requestADemoButton"),
-    button: makeNodeComponent("button"),
     cwDashboardMockup1: makeNodeComponent("cwDashboardMockup1"),
     asFeaturedIn: makeNodeComponent("asFeaturedIn"),
-    img: makeNodeComponent("img"),
-    footerDesktop: makeNodeComponent("footerDesktop"),
+    advisorInsert: makeNodeComponent("advisorInsert"),
+    yourPersonalVirtualFamilyOffice: makeNodeComponent(
+      "yourPersonalVirtualFamilyOffice"
+    ),
+    futureProof2: makeNodeComponent("futureProof2"),
+    pill3: makeNodeComponent("pill3"),
+    couple1: makeNodeComponent("couple1"),
+    keyFeaturesContainer: makeNodeComponent("keyFeaturesContainer"),
+    futureProof: makeNodeComponent("futureProof"),
+    pill2: makeNodeComponent("pill2"),
+    businessman1: makeNodeComponent("businessman1"),
+    scalableMetrics: makeNodeComponent("scalableMetrics"),
+    link: makeNodeComponent("link"),
+    footerDesktop1: makeNodeComponent("footerDesktop1"),
+    globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital:
+      makeNodeComponent(
+        "globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital"
+      ),
     ctaBlock: makeNodeComponent("ctaBlock"),
 
     // Metadata about props expected for PlasmicHomepage

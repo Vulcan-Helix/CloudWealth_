@@ -361,15 +361,15 @@
           "componentType": "component"
         },
         {
-          "id": "0g0VB3cSY0U",
-          "name": "FooterDesktop",
+          "id": "B3-gyon6yF",
+          "name": "FooterDesktop1",
           "type": "managed",
           "projectId": "7iST1GVY7MEDdpjnrPuCNJ",
-          "renderModuleFilePath": "plasmic/cloud_wealth/PlasmicFooterDesktop.tsx",
+          "renderModuleFilePath": "plasmic/cloud_wealth/PlasmicFooterDesktop1.tsx",
           "importSpec": {
-            "modulePath": "FooterDesktop.tsx"
+            "modulePath": "FooterDesktop1.tsx"
           },
-          "cssFilePath": "plasmic/cloud_wealth/PlasmicFooterDesktop.module.css",
+          "cssFilePath": "plasmic/cloud_wealth/PlasmicFooterDesktop1.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }

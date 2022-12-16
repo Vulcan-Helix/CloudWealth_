@@ -170,7 +170,9 @@ function PlasmicAboutUs__RenderFunc(props: {
                   sty.text__xqo6N
                 )}
               >
-                {"Extensive Infomediaries\nvia Extensible Niches"}
+                {
+                  "A new generation Family Office  \ntool with unmatched capabilities"
+                }
               </div>
 
               <div

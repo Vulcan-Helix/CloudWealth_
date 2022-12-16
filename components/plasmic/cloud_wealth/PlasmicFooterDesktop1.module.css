@@ -1,0 +1,120 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  background: linear-gradient(
+      var(--token-aN77bpSkmqYEuu),
+      var(--token-aN77bpSkmqYEuu)
+    ),
+    #ffffff;
+  position: relative;
+  min-width: 0;
+  padding: 8px;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .root {
+    display: flex;
+    flex-direction: column;
+    flex-column-gap: 0px;
+  }
+}
+.svg {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #0f5cbf;
+  width: 154px;
+  height: 135.084px;
+  display: block;
+  top: auto;
+  left: auto;
+  margin-left: 160px;
+  margin-top: 101px;
+  flex-shrink: 0;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .svg {
+    left: auto;
+    top: auto;
+    width: 395px;
+    z-index: 1;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+}
+.text__k5Lxz {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  padding-right: 0px;
+  font-size: 20px;
+  margin-top: 100px;
+  margin-left: 85.5px;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .text__k5Lxz {
+    margin-top: 0px;
+    margin-left: 0px;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+.text___3VE1F {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin-top: 100px;
+  margin-left: 85.5px;
+  padding-right: 0px;
+  font-size: 20px;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .text___3VE1F {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    min-width: 0;
+  }
+}
+.text__otkgG {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin-top: 100px;
+  margin-left: 85.5px;
+  padding-right: 0px;
+  font-size: 20px;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .text__otkgG {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    font-size: 20px;
+    text-align: center;
+    min-width: 0;
+  }
+}
