@@ -38,6 +38,9 @@ import Header from "../../Header"; // plasmic-import: 9KxG1LQhTfZ-fr/component
 import TextInput from "../../TextInput"; // plasmic-import: IieLbHG0mDkikF/component
 import Button from "../../Button"; // plasmic-import: hpLAsCB6dkK5a/component
 import FooterDesktop1 from "../../FooterDesktop1"; // plasmic-import: B3-gyon6yF/component
+import PrivacyPolicyLinks from "../../PrivacyPolicyLinks"; // plasmic-import: fiOxnTwhXt/component
+import FooterLine from "../../FooterLine"; // plasmic-import: gE7AkFiVSK/component
+import Disclaimer from "../../Disclaimer"; // plasmic-import: 2ULwZ9_GVV/component
 import CtaBlock from "../../CtaBlock"; // plasmic-import: JgQ-Rg7b-gm-q/component
 
 import { useScreenVariants as useScreenVariantshT8MqvJo0QuvrA } from "./PlasmicGlobalVariant__Desktop"; // plasmic-import: hT8MQVJo0quvrA/globalVariant
@@ -54,7 +57,6 @@ import LightBlueCheckMarksvgIcon from "./icons/PlasmicIcon__LightBlueCheckMarksv
 import PotatoCheckMarksvgIcon from "./icons/PlasmicIcon__PotatoCheckMarksvg"; // plasmic-import: wtfIcxMRm/icon
 import GreyCheckMarksvgIcon from "./icons/PlasmicIcon__GreyCheckMarksvg"; // plasmic-import: A_2frXz1p/icon
 import BlueArrowWhiteBackgroundBlueBordersvgIcon from "./icons/PlasmicIcon__BlueArrowWhiteBackgroundBlueBordersvg"; // plasmic-import: kgYwOcJGat/icon
-import Line5Icon from "./icons/PlasmicIcon__Line5"; // plasmic-import: Ig28sg-IsK/icon
 
 export type PlasmicHomepage__VariantMembers = {};
 export type PlasmicHomepage__VariantsArgs = {};
@@ -87,7 +89,9 @@ export type PlasmicHomepage__OverridesType = {
   scalableMetrics?: p.Flex<"div">;
   link?: p.Flex<"a"> & Partial<LinkProps>;
   footerDesktop1?: p.Flex<typeof FooterDesktop1>;
-  globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital?: p.Flex<"div">;
+  privacyPolicyLinks?: p.Flex<typeof PrivacyPolicyLinks>;
+  footerLine?: p.Flex<typeof FooterLine>;
+  disclaimer?: p.Flex<typeof Disclaimer>;
   ctaBlock?: p.Flex<typeof CtaBlock>;
 };
 
@@ -1493,29 +1497,16 @@ function PlasmicHomepage__RenderFunc(props: {
                 className={classNames("__wab_instance", sty.footerDesktop1)}
               />
 
-              <div className={classNames(projectcss.all, sty.freeBox__lNnYx)}>
-                {(
-                  hasVariant(globalVariants, "desktop", "mobileOnly")
-                    ? true
-                    : true
-                ) ? (
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__aoJ5Y
-                    )}
-                  >
-                    {
-                      "Privacy Policy            Terms & Conditions            Cookie Policy"
-                    }
-                  </div>
-                ) : null}
-              </div>
+              <PrivacyPolicyLinks
+                data-plasmic-name={"privacyPolicyLinks"}
+                data-plasmic-override={overrides.privacyPolicyLinks}
+                className={classNames("__wab_instance", sty.privacyPolicyLinks)}
+              />
 
-              <Line5Icon
-                className={classNames(projectcss.all, sty.svg__nKyt)}
-                role={"img"}
+              <FooterLine
+                data-plasmic-name={"footerLine"}
+                data-plasmic-override={overrides.footerLine}
+                className={classNames("__wab_instance", sty.footerLine)}
               />
 
               {(
@@ -1523,23 +1514,11 @@ function PlasmicHomepage__RenderFunc(props: {
                   ? true
                   : true
               ) ? (
-                <div
-                  data-plasmic-name={
-                    "globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital"
-                  }
-                  data-plasmic-override={
-                    overrides.globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital
-                  }
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital
-                  )}
-                >
-                  {
-                    "Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures. Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate integrated processes through technically sound intellectual capital. "
-                  }
-                </div>
+                <Disclaimer
+                  data-plasmic-name={"disclaimer"}
+                  data-plasmic-override={overrides.disclaimer}
+                  className={classNames("__wab_instance", sty.disclaimer)}
+                />
               ) : null}
               {(
                 hasVariant(globalVariants, "desktop", "mobileOnly")
@@ -1711,7 +1690,9 @@ const PlasmicDescendants = {
     "scalableMetrics",
     "link",
     "footerDesktop1",
-    "globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital",
+    "privacyPolicyLinks",
+    "footerLine",
+    "disclaimer",
     "ctaBlock"
   ],
   header: ["header"],
@@ -1742,7 +1723,9 @@ const PlasmicDescendants = {
     "scalableMetrics",
     "link",
     "footerDesktop1",
-    "globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital"
+    "privacyPolicyLinks",
+    "footerLine",
+    "disclaimer"
   ],
   yourPersonalVirtualFamilyOffice: [
     "yourPersonalVirtualFamilyOffice",
@@ -1765,10 +1748,9 @@ const PlasmicDescendants = {
   scalableMetrics: ["scalableMetrics", "link"],
   link: ["link"],
   footerDesktop1: ["footerDesktop1"],
-  globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital:
-    [
-      "globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital"
-    ],
+  privacyPolicyLinks: ["privacyPolicyLinks"],
+  footerLine: ["footerLine"],
+  disclaimer: ["disclaimer"],
   ctaBlock: ["ctaBlock"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -1796,7 +1778,9 @@ type NodeDefaultElementType = {
   scalableMetrics: "div";
   link: "a";
   footerDesktop1: typeof FooterDesktop1;
-  globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital: "div";
+  privacyPolicyLinks: typeof PrivacyPolicyLinks;
+  footerLine: typeof FooterLine;
+  disclaimer: typeof Disclaimer;
   ctaBlock: typeof CtaBlock;
 };
 
@@ -1883,10 +1867,9 @@ export const PlasmicHomepage = Object.assign(
     scalableMetrics: makeNodeComponent("scalableMetrics"),
     link: makeNodeComponent("link"),
     footerDesktop1: makeNodeComponent("footerDesktop1"),
-    globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital:
-      makeNodeComponent(
-        "globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital"
-      ),
+    privacyPolicyLinks: makeNodeComponent("privacyPolicyLinks"),
+    footerLine: makeNodeComponent("footerLine"),
+    disclaimer: makeNodeComponent("disclaimer"),
     ctaBlock: makeNodeComponent("ctaBlock"),
 
     // Metadata about props expected for PlasmicHomepage

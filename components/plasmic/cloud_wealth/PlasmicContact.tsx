@@ -72,6 +72,7 @@ export type PlasmicContact__OverridesType = {
   rectangle32?: p.Flex<"div">;
   button3?: p.Flex<"div">;
   button4?: p.Flex<"div">;
+  blockquote?: p.Flex<"blockquote">;
   button?: p.Flex<"div">;
   button2?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
@@ -297,7 +298,7 @@ function PlasmicContact__RenderFunc(props: {
                           }
                           style={{ color: "#FEFEFE" }}
                         >
-                          {"Make an Appointment"}
+                          {"Specialized Sales Support"}
                         </span>
                       </React.Fragment>
                     </h2>
@@ -312,10 +313,12 @@ function PlasmicContact__RenderFunc(props: {
                   <React.Fragment>{"\n"}</React.Fragment>
                   {
                     <blockquote
+                      data-plasmic-name={"blockquote"}
+                      data-plasmic-override={overrides.blockquote}
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.blockquote__ro0F
+                        sty.blockquote
                       )}
                     >
                       <React.Fragment>
@@ -326,7 +329,7 @@ function PlasmicContact__RenderFunc(props: {
                           style={{ color: "#FEFEFE" }}
                         >
                           {
-                            "Synergistically evolve 2.0 technologies rather than just in time initiatives. Quickly deploy strategic networks with compelling e-business. Credibly pontificate highly efficient manufactured products and enabled data."
+                            "For business with more than 5 advisors and 5 assistants, we have a tailored and bespoke offering with discounted licensing fees. Make an appointment with a sales specialist to explore this option. "
                           }
                         </span>
                       </React.Fragment>
@@ -379,30 +382,11 @@ function PlasmicContact__RenderFunc(props: {
                     style={{ color: "#FFFFFF" }}
                   >
                     {
-                      "Dynamically target high-payoff intellectual capital for customized technologies. Objectively integrate emerging core competencies. Dramatically evisculate holistic innovation rather than client-centric data."
+                      "Not sure if this will work for your business? Why not book a demo for us to show you how effective the tool is for Financial Advisors, Trustees and FIduciary Specialists. "
                     }
                   </span>
                 </React.Fragment>
               </div>
-
-              <blockquote
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.blockquote__h7QQo
-                )}
-              >
-                <React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#FEFEFE" }}
-                  >
-                    {
-                      "Synergistically evolve 2.0 technologies rather than just in time initiatives. Quickly deploy strategic networks with compelling e-business. Credibly pontificate highly efficient manufactured products and enabled data."
-                    }
-                  </span>
-                </React.Fragment>
-              </blockquote>
 
               <p.PlasmicImg
                 alt={""}
@@ -679,6 +663,7 @@ const PlasmicDescendants = {
     "rectangle32",
     "button3",
     "button4",
+    "blockquote",
     "button",
     "button2",
     "h1",
@@ -703,6 +688,7 @@ const PlasmicDescendants = {
     "rectangle32",
     "button3",
     "button4",
+    "blockquote",
     "button",
     "button2",
     "h1",
@@ -723,6 +709,7 @@ const PlasmicDescendants = {
     "rectangle32",
     "button3",
     "button4",
+    "blockquote",
     "button",
     "button2",
     "h1",
@@ -748,6 +735,7 @@ const PlasmicDescendants = {
   rectangle32: ["rectangle32", "button3", "button4"],
   button3: ["button3", "button4"],
   button4: ["button4"],
+  blockquote: ["blockquote"],
   button: ["button", "button2"],
   button2: ["button2"],
   h1: ["h1"],
@@ -776,6 +764,7 @@ type NodeDefaultElementType = {
   rectangle32: "div";
   button3: "div";
   button4: "div";
+  blockquote: "blockquote";
   button: "div";
   button2: "div";
   h1: "h1";
@@ -861,6 +850,7 @@ export const PlasmicContact = Object.assign(
     rectangle32: makeNodeComponent("rectangle32"),
     button3: makeNodeComponent("button3"),
     button4: makeNodeComponent("button4"),
+    blockquote: makeNodeComponent("blockquote"),
     button: makeNodeComponent("button"),
     button2: makeNodeComponent("button2"),
     h1: makeNodeComponent("h1"),

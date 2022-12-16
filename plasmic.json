@@ -372,6 +372,45 @@
           "cssFilePath": "plasmic/cloud_wealth/PlasmicFooterDesktop1.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "fiOxnTwhXt",
+          "name": "PrivacyPolicyLinks",
+          "type": "managed",
+          "projectId": "7iST1GVY7MEDdpjnrPuCNJ",
+          "renderModuleFilePath": "plasmic/cloud_wealth/PlasmicPrivacyPolicyLinks.tsx",
+          "importSpec": {
+            "modulePath": "PrivacyPolicyLinks.tsx"
+          },
+          "cssFilePath": "plasmic/cloud_wealth/PlasmicPrivacyPolicyLinks.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "gE7AkFiVSK",
+          "name": "FooterLine",
+          "type": "managed",
+          "projectId": "7iST1GVY7MEDdpjnrPuCNJ",
+          "renderModuleFilePath": "plasmic/cloud_wealth/PlasmicFooterLine.tsx",
+          "importSpec": {
+            "modulePath": "FooterLine.tsx"
+          },
+          "cssFilePath": "plasmic/cloud_wealth/PlasmicFooterLine.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "2ULwZ9_GVV",
+          "name": "Disclaimer",
+          "type": "managed",
+          "projectId": "7iST1GVY7MEDdpjnrPuCNJ",
+          "renderModuleFilePath": "plasmic/cloud_wealth/PlasmicDisclaimer.tsx",
+          "importSpec": {
+            "modulePath": "Disclaimer.tsx"
+          },
+          "cssFilePath": "plasmic/cloud_wealth/PlasmicDisclaimer.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1106,6 +1145,46 @@
           "id": "KNGqYWUMV",
           "name": "businessman 1.png",
           "filePath": "../public/plasmic/cloud_wealth/images/businessman1Png.png"
+        },
+        {
+          "id": "Kb6DGOrJo",
+          "name": "Image Placeholder 4",
+          "filePath": "../public/plasmic/cloud_wealth/images/imagePlaceholder4.svg"
+        },
+        {
+          "id": "tUZqjiyUjn",
+          "name": "Image Placeholder 5",
+          "filePath": "../public/plasmic/cloud_wealth/images/imagePlaceholder5.svg"
+        },
+        {
+          "id": "QtJHizBx_",
+          "name": "grandparents 1.png",
+          "filePath": "../public/plasmic/cloud_wealth/images/grandparents1Png.png"
+        },
+        {
+          "id": "80uHEROv7",
+          "name": "family 1.png",
+          "filePath": "../public/plasmic/cloud_wealth/images/family1Png.png"
+        },
+        {
+          "id": "_4ZgtuRuk",
+          "name": "financial-advisor-1 1.png",
+          "filePath": "../public/plasmic/cloud_wealth/images/financialAdvisor11Png.png"
+        },
+        {
+          "id": "A8s1IG_AU",
+          "name": "group-chat 1.png",
+          "filePath": "../public/plasmic/cloud_wealth/images/groupChat1Png.png"
+        },
+        {
+          "id": "rDfEtHo2N",
+          "name": "financial-advisor-2 1.png",
+          "filePath": "../public/plasmic/cloud_wealth/images/financialAdvisor21Png.png"
+        },
+        {
+          "id": "4bP_nyLKu",
+          "name": "financial-advisor-3 1.png",
+          "filePath": "../public/plasmic/cloud_wealth/images/financialAdvisor31Png.png"
         }
       ],
       "indirect": false,

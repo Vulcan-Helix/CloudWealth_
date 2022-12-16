@@ -31,6 +31,16 @@
       }
     },
     {
+      "name": "Midnight",
+      "type": "color",
+      "value": "#152B59",
+      "category": "color",
+      "meta": {
+        "projectId": "7iST1GVY7MEDdpjnrPuCNJ",
+        "id": "6wuwiDIh0"
+      }
+    },
+    {
       "name": "PrimaryColor",
       "type": "color",
       "value": "#535353",

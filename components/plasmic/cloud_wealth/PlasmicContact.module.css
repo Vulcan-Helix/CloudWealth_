@@ -256,7 +256,7 @@
   font-family: "SF Pro Display";
   font-size: 48px;
 }
-.blockquote__ro0F {
+.blockquote {
   font-family: "SF Pro Display";
   font-size: 20px;
   line-height: 1.6;
@@ -276,14 +276,6 @@
 .h2__gs3QK {
   font-size: 48px;
   font-family: "SF Pro Display";
-}
-.blockquote__h7QQo {
-  font-family: "SF Pro Display";
-  font-size: 20px;
-  line-height: 1.6;
-  position: absolute;
-  left: 0px;
-  top: 0px;
 }
 .img__z1JpT {
   position: absolute;
@@ -358,6 +350,7 @@
   line-height: 100%;
   color: rgba(255, 255, 255, 1);
   position: relative;
+  height: auto;
 }
 .text__mHfKx {
   display: block;

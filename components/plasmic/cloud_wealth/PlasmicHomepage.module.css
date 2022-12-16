@@ -1389,83 +1389,29 @@
   position: relative;
   margin-bottom: 49px;
 }
-.freeBox__lNnYx {
-  display: flex;
+.privacyPolicyLinks:global(.__wab_instance) {
   position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  flex-wrap: nowrap;
-  align-content: stretch;
-  background: linear-gradient(
-      var(--token-aN77bpSkmqYEuu),
-      var(--token-aN77bpSkmqYEuu)
-    ),
-    #ffffff;
   margin-top: 92px;
-  min-width: 0;
-  padding: 8px;
 }
-.text__aoJ5Y {
-  display: block;
-  font-size: 20px;
-  font-family: "SF Pro Display";
-  font-weight: 400;
-  letter-spacing: 0em;
-  line-height: 100%;
-  color: rgba(146, 148, 151, 1);
+.footerLine:global(.__wab_instance) {
   position: relative;
-  left: auto;
-  bottom: auto;
-  margin-left: 160px;
-}
-@media (min-width: 0px) and (max-width: 767px) {
-  .text__aoJ5Y {
-    left: auto;
-    bottom: auto;
-    display: none;
-  }
-}
-.svg__nKyt {
-  position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  color: #939598;
-  transform: skew(-0.057295760414500616deg, 0deg);
-  width: 1120px;
-  height: 1px;
-  display: block;
-  transform-origin: top left;
   left: auto;
   bottom: auto;
   flex-shrink: 0;
 }
-.globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital {
-  display: block;
-  font-size: 20px;
-  font-family: "SF Pro Display";
-  font-weight: 400;
-  letter-spacing: 0em;
-  line-height: 100%;
-  color: #929497;
+.disclaimer:global(.__wab_instance) {
   position: relative;
-  left: auto;
-  width: 1107px;
   top: auto;
-  background: var(--token-aN77bpSkmqYEuu);
+  left: auto;
   margin-top: 49px;
   margin-bottom: 49px;
 }
 @media (min-width: 0px) and (max-width: 767px) {
-  .globallyIncubateStandardsCompliantChannelsBeforeScalableBenefitsQuicklyDisseminateSuperiorDeliverablesWhereasWebEnabledApplicationsQuicklyDriveClicksAndMortarCatalystsForChangeBeforeVerticalArchitecturesCrediblyReintermediateBackendIdeasForCrossPlatformModelsContinuallyReintermediateIntegratedProcessesThroughTechnicallySoundIntellectualCapital {
-    width: 388px;
-    left: auto;
-    bottom: auto;
+  .disclaimer:global(.__wab_instance) {
     position: relative;
     top: auto;
+    left: auto;
+    bottom: auto;
     display: none;
   }
 }

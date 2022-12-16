@@ -1,0 +1,39 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  background: linear-gradient(
+      var(--token-aN77bpSkmqYEuu),
+      var(--token-aN77bpSkmqYEuu)
+    ),
+    #ffffff;
+  position: relative;
+  min-width: 0;
+  padding: 8px;
+}
+.text {
+  display: block;
+  font-size: 20px;
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(146, 148, 151, 1);
+  position: relative;
+  left: auto;
+  bottom: auto;
+  margin-left: 160px;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .text {
+    left: auto;
+    bottom: auto;
+    display: none;
+  }
+}
