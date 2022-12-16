@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -357,6 +357,19 @@
             "modulePath": "CwFooter.tsx"
           },
           "cssFilePath": "plasmic/cloud_wealth/PlasmicCwFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "0g0VB3cSY0U",
+          "name": "FooterDesktop",
+          "type": "managed",
+          "projectId": "7iST1GVY7MEDdpjnrPuCNJ",
+          "renderModuleFilePath": "plasmic/cloud_wealth/PlasmicFooterDesktop.tsx",
+          "importSpec": {
+            "modulePath": "FooterDesktop.tsx"
+          },
+          "cssFilePath": "plasmic/cloud_wealth/PlasmicFooterDesktop.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }
