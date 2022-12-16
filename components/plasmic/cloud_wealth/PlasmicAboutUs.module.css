@@ -96,19 +96,12 @@
   top: 100px;
   margin-left: -112px;
 }
-.text__uDAc {
-  display: block;
-  font-size: 24px;
-  text-align: center;
-  font-family: "SF Pro Display";
-  font-weight: 400;
-  letter-spacing: 0em;
-  line-height: 34px;
-  color: rgba(0, 0, 0, 1);
-  width: 1027px;
-  position: absolute;
-  left: 208px;
-  top: 280px;
+@media (min-width: 0px) and (max-width: 767px) {
+  .text__xqo6N {
+    width: 396px;
+    left: 632px;
+    margin-bottom: 26px;
+  }
 }
 .rectangle23 {
   background: linear-gradient(
@@ -125,6 +118,11 @@
   position: absolute;
   left: 1441px;
   top: 889px;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .rectangle23 {
+    display: none;
+  }
 }
 .frame7 {
   flex-direction: row;
@@ -194,6 +192,17 @@
 .img__mhV8K * {
   transform-style: preserve-3d;
 }
+@media (min-width: 0px) and (max-width: 767px) {
+  .img__mhV8K {
+    transform-style: preserve-3d;
+    display: none !important;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .img__mhV8K * {
+    transform-style: preserve-3d;
+  }
+}
 .img__lGwnj {
   position: relative;
   object-fit: cover;
@@ -214,6 +223,17 @@
 }
 .img__lGwnj * {
   transform-style: preserve-3d;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .img__lGwnj {
+    transform-style: preserve-3d;
+    display: none !important;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .img__lGwnj * {
+    transform-style: preserve-3d;
+  }
 }
 .footer:global(.__wab_instance) {
   position: relative;
@@ -241,6 +261,7 @@
   left: 724px;
   top: 47px;
   height: 190px;
+  padding-bottom: 36px;
 }
 .img__t0TWr {
   position: absolute;
@@ -419,36 +440,13 @@
 .img__hdNid > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
-.footerDesktop1___9AfI:global(.__wab_instance) {
-  max-width: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-.footerDesktop1__atRuh:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-  margin-top: calc(51px + 0px) !important;
-}
-.privacyPolicyLinks:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-  height: 46px;
-  flex-shrink: 0;
-}
 .footerLine:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
   flex-shrink: 0;
 }
-.disclaimer:global(.__wab_instance) {
+.cwFooter:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-  height: 102px;
-  width: 1192px;
-  margin-left: 0px;
-  margin-top: calc(0px + 0px) !important;
-  margin-right: 0px;
-  margin-bottom: 0px;
   flex-shrink: 0;
 }

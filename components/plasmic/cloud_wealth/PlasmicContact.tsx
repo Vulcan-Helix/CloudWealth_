@@ -268,7 +268,7 @@ function PlasmicContact__RenderFunc(props: {
                       sty.button4
                     )}
                   >
-                    {"Contact Sales"}
+                    {"Contact a Sales Advisor"}
                   </div>
                 </p.Stack>
               </div>
@@ -440,7 +440,7 @@ function PlasmicContact__RenderFunc(props: {
                     sty.button2
                   )}
                 >
-                  {"Meet with an Advisor"}
+                  {"Book a Demo"}
                 </div>
               </p.Stack>
 
@@ -469,7 +469,7 @@ function PlasmicContact__RenderFunc(props: {
                   }
                   <React.Fragment>
                     {
-                      "\nLeverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment."
+                      "\nAlready signed-up or just have general queries? Let’s help you make contact with the right person by clicking on the relevant link below. Our turnaround time is 24hours. If you have an urgent query, please mark the message as urgent in the subject line."
                     }
                   </React.Fragment>
                 </React.Fragment>

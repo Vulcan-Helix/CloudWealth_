@@ -36,10 +36,10 @@ import {
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9KxG1LQhTfZ-fr/component
 import Footer from "../../Footer"; // plasmic-import: JfbLrw7cZCfTIu/component
-import FooterDesktop1 from "../../FooterDesktop1"; // plasmic-import: B3-gyon6yF/component
-import PrivacyPolicyLinks from "../../PrivacyPolicyLinks"; // plasmic-import: fiOxnTwhXt/component
 import FooterLine from "../../FooterLine"; // plasmic-import: gE7AkFiVSK/component
-import Disclaimer from "../../Disclaimer"; // plasmic-import: 2ULwZ9_GVV/component
+import CwFooter from "../../CwFooter"; // plasmic-import: wco-GCH2Qp/component
+
+import { useScreenVariants as useScreenVariantshT8MqvJo0QuvrA } from "./PlasmicGlobalVariant__Desktop"; // plasmic-import: hT8MQVJo0quvrA/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -72,9 +72,8 @@ export type PlasmicAboutUs__OverridesType = {
   rectangle20?: p.Flex<"div">;
   pill3?: p.Flex<"div">;
   pill4?: p.Flex<"div">;
-  privacyPolicyLinks?: p.Flex<typeof PrivacyPolicyLinks>;
   footerLine?: p.Flex<typeof FooterLine>;
-  disclaimer?: p.Flex<typeof Disclaimer>;
+  cwFooter?: p.Flex<typeof CwFooter>;
 };
 
 export interface DefaultAboutUsProps {}
@@ -99,6 +98,10 @@ function PlasmicAboutUs__RenderFunc(props: {
   const currentUser = p.useCurrentUser?.() || {};
 
   const [$queries, setDollarQueries] = React.useState({});
+
+  const globalVariants = ensureGlobalVariants({
+    desktop: useScreenVariantshT8MqvJo0QuvrA()
+  });
 
   return (
     <React.Fragment>
@@ -175,85 +178,90 @@ function PlasmicAboutUs__RenderFunc(props: {
                 }
               </div>
 
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__uDAc
-                )}
-              >
-                {
-                  "Gone are the days of frantically switching between multiple apps to accomplish a single task. Instead, you can drastically reduce the time spent doing administrative tasks by using CloudWealth.\nPlan, schedule and attend virtual meetings, send messages, manage your diary, generate reports, store files and do calculations all on one safe and secure  virtual platform designed for ease of use."
-                }
-              </div>
-
-              <div
-                data-plasmic-name={"rectangle23"}
-                data-plasmic-override={overrides.rectangle23}
-                className={classNames(projectcss.all, sty.rectangle23)}
-              >
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"frame7"}
-                  data-plasmic-override={overrides.frame7}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.frame7)}
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
+                <div
+                  data-plasmic-name={"rectangle23"}
+                  data-plasmic-override={overrides.rectangle23}
+                  className={classNames(projectcss.all, sty.rectangle23)}
                 >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__hSa0S)}
-                    displayHeight={"381.073px" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"382.829px" as const}
-                    loading={"lazy" as const}
-                    src={{
-                      src: "/plasmic/cloud_wealth/images/financialAdvisor11Png.png",
-                      fullWidth: 385,
-                      fullHeight: 381,
-                      aspectRatio: undefined
-                    }}
-                  />
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"frame7"}
+                    data-plasmic-override={overrides.frame7}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.frame7)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__hSa0S)}
+                      displayHeight={"381.073px" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"382.829px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/cloud_wealth/images/financialAdvisor11Png.png",
+                        fullWidth: 385,
+                        fullHeight: 381,
+                        aspectRatio: undefined
+                      }}
+                    />
 
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__mhV8K)}
-                    displayHeight={"381.073px" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"384.585px" as const}
-                    loading={"lazy" as const}
-                    src={{
-                      src: "/plasmic/cloud_wealth/images/family1Png.png",
-                      fullWidth: 384,
-                      fullHeight: 381,
-                      aspectRatio: undefined
-                    }}
-                  />
-
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__lGwnj)}
-                    displayHeight={"381.073px" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"384.585px" as const}
-                    loading={"lazy" as const}
-                    src={{
-                      src: "/plasmic/cloud_wealth/images/grandparents1Png.png",
-                      fullWidth: 384,
-                      fullHeight: 381,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </p.Stack>
-              </div>
+                    {(
+                      hasVariant(globalVariants, "desktop", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__mhV8K)}
+                        displayHeight={"381.073px" as const}
+                        displayMaxHeight={"none" as const}
+                        displayMaxWidth={"100%" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={"384.585px" as const}
+                        loading={"lazy" as const}
+                        src={{
+                          src: "/plasmic/cloud_wealth/images/family1Png.png",
+                          fullWidth: 384,
+                          fullHeight: 381,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    ) : null}
+                    {(
+                      hasVariant(globalVariants, "desktop", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__lGwnj)}
+                        displayHeight={"381.073px" as const}
+                        displayMaxHeight={"none" as const}
+                        displayMaxWidth={"100%" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={"384.585px" as const}
+                        loading={"lazy" as const}
+                        src={{
+                          src: "/plasmic/cloud_wealth/images/grandparents1Png.png",
+                          fullWidth: 384,
+                          fullHeight: 381,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    ) : null}
+                  </p.Stack>
+                </div>
+              ) : null}
             </div>
           </div>
 
@@ -460,24 +468,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                 />
               </div>
             </div>
-
-            <FooterDesktop1
-              className={classNames(
-                "__wab_instance",
-                sty.footerDesktop1___9AfI
-              )}
-            />
           </div>
-
-          <FooterDesktop1
-            className={classNames("__wab_instance", sty.footerDesktop1__atRuh)}
-          />
-
-          <PrivacyPolicyLinks
-            data-plasmic-name={"privacyPolicyLinks"}
-            data-plasmic-override={overrides.privacyPolicyLinks}
-            className={classNames("__wab_instance", sty.privacyPolicyLinks)}
-          />
 
           <FooterLine
             data-plasmic-name={"footerLine"}
@@ -485,10 +476,10 @@ function PlasmicAboutUs__RenderFunc(props: {
             className={classNames("__wab_instance", sty.footerLine)}
           />
 
-          <Disclaimer
-            data-plasmic-name={"disclaimer"}
-            data-plasmic-override={overrides.disclaimer}
-            className={classNames("__wab_instance", sty.disclaimer)}
+          <CwFooter
+            data-plasmic-name={"cwFooter"}
+            data-plasmic-override={overrides.cwFooter}
+            className={classNames("__wab_instance", sty.cwFooter)}
           />
         </p.Stack>
       </div>
@@ -514,9 +505,8 @@ const PlasmicDescendants = {
     "rectangle20",
     "pill3",
     "pill4",
-    "privacyPolicyLinks",
     "footerLine",
-    "disclaimer"
+    "cwFooter"
   ],
   header: ["header"],
   figmaPaste: [
@@ -548,9 +538,8 @@ const PlasmicDescendants = {
   rectangle20: ["rectangle20", "pill3", "pill4"],
   pill3: ["pill3", "pill4"],
   pill4: ["pill4"],
-  privacyPolicyLinks: ["privacyPolicyLinks"],
   footerLine: ["footerLine"],
-  disclaimer: ["disclaimer"]
+  cwFooter: ["cwFooter"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -572,9 +561,8 @@ type NodeDefaultElementType = {
   rectangle20: "div";
   pill3: "div";
   pill4: "div";
-  privacyPolicyLinks: typeof PrivacyPolicyLinks;
   footerLine: typeof FooterLine;
-  disclaimer: typeof Disclaimer;
+  cwFooter: typeof CwFooter;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -653,9 +641,8 @@ export const PlasmicAboutUs = Object.assign(
     rectangle20: makeNodeComponent("rectangle20"),
     pill3: makeNodeComponent("pill3"),
     pill4: makeNodeComponent("pill4"),
-    privacyPolicyLinks: makeNodeComponent("privacyPolicyLinks"),
     footerLine: makeNodeComponent("footerLine"),
-    disclaimer: makeNodeComponent("disclaimer"),
+    cwFooter: makeNodeComponent("cwFooter"),
 
     // Metadata about props expected for PlasmicAboutUs
     internalVariantProps: PlasmicAboutUs__VariantProps,
