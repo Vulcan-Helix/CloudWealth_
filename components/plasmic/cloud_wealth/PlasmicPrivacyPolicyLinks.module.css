@@ -17,7 +17,16 @@
   min-width: 0;
   padding: 8px;
 }
-.text {
+@media (min-width: 0px) and (max-width: 767px) {
+  .root {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    flex-row-gap: 0px;
+    min-height: 0;
+  }
+}
+.text__gXcDl {
   display: block;
   font-size: 20px;
   font-family: "SF Pro Display";
@@ -31,9 +40,30 @@
   margin-left: 160px;
 }
 @media (min-width: 0px) and (max-width: 767px) {
-  .text {
+  .text__gXcDl {
     left: auto;
+    position: relative;
+    top: auto;
     bottom: auto;
     display: none;
+  }
+}
+.text___5D0L {
+  position: relative;
+  plasmic-display-none: true;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  text-align: justify;
+  margin-bottom: 16px;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .text___5D0L {
+    position: relative;
+    left: auto;
+    top: auto;
+    text-align: center;
+    display: block;
   }
 }

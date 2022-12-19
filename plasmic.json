@@ -411,6 +411,19 @@
           "cssFilePath": "plasmic/cloud_wealth/PlasmicDisclaimer.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "aPIlYqZD5m",
+          "name": "HowWeDoItPill",
+          "type": "managed",
+          "projectId": "7iST1GVY7MEDdpjnrPuCNJ",
+          "renderModuleFilePath": "plasmic/cloud_wealth/PlasmicHowWeDoItPill.tsx",
+          "importSpec": {
+            "modulePath": "HowWeDoItPill.tsx"
+          },
+          "cssFilePath": "plasmic/cloud_wealth/PlasmicHowWeDoItPill.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

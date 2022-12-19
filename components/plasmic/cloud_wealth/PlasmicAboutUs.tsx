@@ -35,9 +35,11 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: 9KxG1LQhTfZ-fr/component
-import Footer from "../../Footer"; // plasmic-import: JfbLrw7cZCfTIu/component
+import HowWeDoItPill from "../../HowWeDoItPill"; // plasmic-import: aPIlYqZD5m/component
 import FooterLine from "../../FooterLine"; // plasmic-import: gE7AkFiVSK/component
 import CwFooter from "../../CwFooter"; // plasmic-import: wco-GCH2Qp/component
+import FooterDesktop1 from "../../FooterDesktop1"; // plasmic-import: B3-gyon6yF/component
+import PrivacyPolicyLinks from "../../PrivacyPolicyLinks"; // plasmic-import: fiOxnTwhXt/component
 
 import { useScreenVariants as useScreenVariantshT8MqvJo0QuvrA } from "./PlasmicGlobalVariant__Desktop"; // plasmic-import: hT8MQVJo0quvrA/globalVariant
 
@@ -65,15 +67,21 @@ export type PlasmicAboutUs__OverridesType = {
   rectangle?: p.Flex<"div">;
   rectangle23?: p.Flex<"div">;
   frame7?: p.Flex<"div">;
-  footer?: p.Flex<typeof Footer>;
   figmaPaste2?: p.Flex<"div">;
-  pill?: p.Flex<"div">;
-  pill2?: p.Flex<"div">;
   rectangle20?: p.Flex<"div">;
   pill3?: p.Flex<"div">;
   pill4?: p.Flex<"div">;
   footerLine?: p.Flex<typeof FooterLine>;
   cwFooter?: p.Flex<typeof CwFooter>;
+  figmaPaste3?: p.Flex<"div">;
+  pill5?: p.Flex<"div">;
+  pill6?: p.Flex<"div">;
+  rectangle21?: p.Flex<"div">;
+  pill7?: p.Flex<"div">;
+  pill8?: p.Flex<"div">;
+  h1?: p.Flex<"h1">;
+  footerDesktop1?: p.Flex<typeof FooterDesktop1>;
+  privacyPolicyLinks?: p.Flex<typeof PrivacyPolicyLinks>;
 };
 
 export interface DefaultAboutUsProps {}
@@ -178,6 +186,18 @@ function PlasmicAboutUs__RenderFunc(props: {
                 }
               </div>
 
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__uDAc
+                )}
+              >
+                {
+                  "Gone are the days of frantically switching between multiple apps to accomplish a single task. Instead, you can drastically reduce the time spent doing administrative tasks by using CloudWealth.\nPlan, schedule and attend virtual meetings, send messages, manage your diary, generate reports, store files and do calculations all on one safe and secure  virtual platform designed for ease of use."
+                }
+              </div>
+
               {(
                 hasVariant(globalVariants, "desktop", "mobileOnly")
                   ? true
@@ -188,179 +208,123 @@ function PlasmicAboutUs__RenderFunc(props: {
                   data-plasmic-override={overrides.rectangle23}
                   className={classNames(projectcss.all, sty.rectangle23)}
                 >
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"frame7"}
-                    data-plasmic-override={overrides.frame7}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame7)}
-                  >
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__hSa0S)}
-                      displayHeight={"381.073px" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"382.829px" as const}
-                      loading={"lazy" as const}
-                      src={{
-                        src: "/plasmic/cloud_wealth/images/financialAdvisor11Png.png",
-                        fullWidth: 385,
-                        fullHeight: 381,
-                        aspectRatio: undefined
-                      }}
-                    />
+                  {(
+                    hasVariant(globalVariants, "desktop", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"frame7"}
+                      data-plasmic-override={overrides.frame7}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.frame7)}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__hSa0S)}
+                        displayHeight={"381.073px" as const}
+                        displayMaxHeight={"none" as const}
+                        displayMaxWidth={"100%" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={"382.829px" as const}
+                        loading={"lazy" as const}
+                        src={{
+                          src: "/plasmic/cloud_wealth/images/financialAdvisor11Png.png",
+                          fullWidth: 385,
+                          fullHeight: 381,
+                          aspectRatio: undefined
+                        }}
+                      />
 
-                    {(
-                      hasVariant(globalVariants, "desktop", "mobileOnly")
-                        ? true
-                        : true
-                    ) ? (
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__mhV8K)}
-                        displayHeight={"381.073px" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"384.585px" as const}
-                        loading={"lazy" as const}
-                        src={{
-                          src: "/plasmic/cloud_wealth/images/family1Png.png",
-                          fullWidth: 384,
-                          fullHeight: 381,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    ) : null}
-                    {(
-                      hasVariant(globalVariants, "desktop", "mobileOnly")
-                        ? true
-                        : true
-                    ) ? (
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__lGwnj)}
-                        displayHeight={"381.073px" as const}
-                        displayMaxHeight={"none" as const}
-                        displayMaxWidth={"100%" as const}
-                        displayMinHeight={"0" as const}
-                        displayMinWidth={"0" as const}
-                        displayWidth={"384.585px" as const}
-                        loading={"lazy" as const}
-                        src={{
-                          src: "/plasmic/cloud_wealth/images/grandparents1Png.png",
-                          fullWidth: 384,
-                          fullHeight: 381,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    ) : null}
-                  </p.Stack>
+                      {(
+                        hasVariant(globalVariants, "desktop", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img__mhV8K)}
+                          displayHeight={
+                            hasVariant(globalVariants, "desktop", "mobileOnly")
+                              ? ("618px" as const)
+                              : ("381.073px" as const)
+                          }
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"384.585px" as const}
+                          loading={"lazy" as const}
+                          src={{
+                            src: "/plasmic/cloud_wealth/images/family1Png.png",
+                            fullWidth: 384,
+                            fullHeight: 381,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      ) : null}
+                      {(
+                        hasVariant(globalVariants, "desktop", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img__lGwnj)}
+                          displayHeight={"381.073px" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"384.585px" as const}
+                          loading={"lazy" as const}
+                          src={{
+                            src: "/plasmic/cloud_wealth/images/grandparents1Png.png",
+                            fullWidth: 384,
+                            fullHeight: 381,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      ) : null}
+                    </p.Stack>
+                  ) : null}
                 </div>
               ) : null}
             </div>
           </div>
 
-          <Footer
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames("__wab_instance", sty.footer)}
-          />
-
-          <div
-            data-plasmic-name={"figmaPaste2"}
-            data-plasmic-override={overrides.figmaPaste2}
-            className={classNames(projectcss.all, sty.figmaPaste2)}
-          >
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
             <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__g5UnA
-              )}
+              data-plasmic-name={"figmaPaste2"}
+              data-plasmic-override={overrides.figmaPaste2}
+              className={classNames(projectcss.all, sty.figmaPaste2)}
             >
-              <React.Fragment>
-                <React.Fragment>{""}</React.Fragment>
-                {
-                  <h2
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h2,
-                      projectcss.__wab_text,
-                      sty.h2__qJ8Q
-                    )}
-                  >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#0F5CBF" }}
-                      >
-                        {"Relationship Focussed"}
-                      </span>
-                    </React.Fragment>
-                  </h2>
-                }
-                <React.Fragment>
-                  {
-                    "\nRelationships are at the core of what we do. We believe that Family Offices are about relationships and trust.\n\nBy being able to privately and securely send and receive electronic documents , end-to-end encrypted messaging and the ability to do accurate calculations in a timely manner helps increase trust, reduces the risk of data theft and makes this tool suited for family office service providers or private individuals with financial acumen."
-                  }
-                </React.Fragment>
-              </React.Fragment>
-            </div>
-
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__t0TWr)}
-              displayHeight={"506px" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"499px" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/cloud_wealth/images/groupChat1Png.png",
-                fullWidth: 499,
-                fullHeight: 506,
-                aspectRatio: undefined
-              }}
-            />
-
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"pill"}
-              data-plasmic-override={overrides.pill}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.pill)}
-            >
-              <div
-                data-plasmic-name={"pill2"}
-                data-plasmic-override={overrides.pill2}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.pill2
-                )}
-              >
-                {"how we do it"}
-              </div>
-            </p.Stack>
-
-            <div
-              data-plasmic-name={"rectangle20"}
-              data-plasmic-override={overrides.rectangle20}
-              className={classNames(projectcss.all, sty.rectangle20)}
-            >
-              <div className={classNames(projectcss.all, sty.freeBox__t9Uix)}>
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
+                <HowWeDoItPill
+                  className={classNames(
+                    "__wab_instance",
+                    sty.howWeDoItPill__rfVnG
+                  )}
+                />
+              ) : null}
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text___5WpN3
+                    sty.text__g5UnA
                   )}
                 >
                   <React.Fragment>
@@ -371,7 +335,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                           projectcss.all,
                           projectcss.h2,
                           projectcss.__wab_text,
-                          sty.h2__rBxAx
+                          sty.h2__qJ8Q
                         )}
                       >
                         <React.Fragment>
@@ -379,22 +343,635 @@ function PlasmicAboutUs__RenderFunc(props: {
                             className={
                               "plasmic_default__all plasmic_default__span"
                             }
-                            style={{ color: "#FFFFFF" }}
+                            style={{ color: "#0F5CBF" }}
                           >
-                            {"A Strategically Focussed Mindset"}
+                            {"Relationship Focussed"}
                           </span>
                         </React.Fragment>
                       </h2>
                     }
-                    <React.Fragment>{""}</React.Fragment>
+                    <React.Fragment>
+                      {
+                        "\nRelationships are at the core of what we do. We believe that Family Offices are about relationships and trust.\n\nBy being able to privately and securely send and receive electronic documents , end-to-end encrypted messaging and the ability to do accurate calculations in a timely manner helps increase trust, reduces the risk of data theft and makes this tool suited for family office service providers or private individuals with financial acumen."
+                      }
+                    </React.Fragment>
                   </React.Fragment>
                 </div>
+              ) : null}
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__t0TWr)}
+                  displayHeight={"506px" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"499px" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/cloud_wealth/images/groupChat1Png.png",
+                    fullWidth: 499,
+                    fullHeight: 506,
+                    aspectRatio: undefined
+                  }}
+                />
+              ) : null}
 
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__qlY4M
+                )}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FFFFFF" }}
+                  >
+                    {
+                      "According to a recent study conducted by Credit Suisse, “...Generational Family Wealth is most often created by planning strategically, on a consistent basis”. Create an effective, sustainable strategy by having the right information at your disposal. From Personal and Corporate Financial Planning, to Estate Planning, Trust Planning and everything in between, The CloudWealth array of calculators will arm you with more information than ever before."
+                    }
+                  </span>
+                </React.Fragment>
+              </div>
+
+              <div
+                data-plasmic-name={"rectangle20"}
+                data-plasmic-override={overrides.rectangle20}
+                className={classNames(projectcss.all, sty.rectangle20)}
+              >
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"pill3"}
+                    data-plasmic-override={overrides.pill3}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.pill3)}
+                  >
+                    <div
+                      data-plasmic-name={"pill4"}
+                      data-plasmic-override={overrides.pill4}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.pill4
+                      )}
+                    >
+                      {"future-proof"}
+                    </div>
+                  </p.Stack>
+                ) : null}
+
+                <div className={classNames(projectcss.all, sty.freeBox__t9Uix)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___5WpN3
+                    )}
+                  >
+                    <React.Fragment>
+                      <React.Fragment>{""}</React.Fragment>
+                      {(
+                        hasVariant(globalVariants, "desktop", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <h2
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h2,
+                            projectcss.__wab_text,
+                            sty.h2__rBxAx
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ color: "#FFFFFF" }}
+                            >
+                              {"A Strategically Focussed Mindset"}
+                            </span>
+                          </React.Fragment>
+                        </h2>
+                      ) : null}
+                      <React.Fragment>{""}</React.Fragment>
+                    </React.Fragment>
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___67N7P
+                    )}
+                  >
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FFFFFF" }}
+                      >
+                        {
+                          "According to a recent study conducted by Credit Suisse, “...Generational Family Wealth is most often created by planning strategically, on a consistent basis”. Create an effective, sustainable strategy by having the right information at your disposal. From Personal and Corporate Financial Planning, to Estate Planning, Trust Planning and everything in between, The CloudWealth array of calculators will arm you with more information than ever before."
+                        }
+                      </span>
+                    </React.Fragment>
+                  </div>
+                </div>
+
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__jw1Fn)}
+                  >
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img___5CbG2)}
+                      displayHeight={"auto" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"auto" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/cloud_wealth/images/financialAdvisor21Png.png",
+                        fullWidth: 499,
+                        fullHeight: 506,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__hdNid)}
+                      displayHeight={"301px" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"556px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/cloud_wealth/images/financialAdvisor31Png.png",
+                        fullWidth: 556,
+                        fullHeight: 301,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
+                ) : null}
+              </div>
+            </div>
+          ) : null}
+
+          <FooterLine
+            data-plasmic-name={"footerLine"}
+            data-plasmic-override={overrides.footerLine}
+            className={classNames("__wab_instance", sty.footerLine)}
+          />
+
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <CwFooter
+              data-plasmic-name={"cwFooter"}
+              data-plasmic-override={overrides.cwFooter}
+              className={classNames("__wab_instance", sty.cwFooter)}
+            />
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__t53Dj)}
+              displayHeight={"auto" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"100%" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"auto" as const}
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/cloud_wealth/images/family1Png.png",
+                fullWidth: 384,
+                fullHeight: 381,
+                aspectRatio: undefined
+              }}
+            />
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <div className={classNames(projectcss.all, sty.freeBox__s2Rx)}>
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
                 <div
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__qlY4M
+                    sty.text__yaq95
+                  )}
+                >
+                  {"Enter some text"}
+                </div>
+              ) : null}
+
+              <HowWeDoItPill
+                className={classNames(
+                  "__wab_instance",
+                  sty.howWeDoItPill__rmyRt
+                )}
+              />
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__vW5Sj
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>{""}</React.Fragment>
+                  {
+                    <h2
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h2,
+                        projectcss.__wab_text,
+                        sty.h2__aCBcM
+                      )}
+                    >
+                      <React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#0F5CBF" }}
+                        >
+                          {"Relationship Focussed"}
+                        </span>
+                      </React.Fragment>
+                    </h2>
+                  }
+                  <React.Fragment>
+                    {
+                      "\nRelationships are at the core of what we do. We believe that Family Offices are about relationships and trust.\n\nBy being able to privately and securely send and receive electronic documents , end-to-end encrypted messaging and the ability to do accurate calculations in a timely manner helps increase trust, reduces the risk of data theft and makes this tool suited for family office service providers or private individuals with financial acumen."
+                    }
+                  </React.Fragment>
+                </React.Fragment>
+              </div>
+
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__lGsB6)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/cloud_wealth/images/groupChat1Png.png",
+                  fullWidth: 499,
+                  fullHeight: 506,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <HowWeDoItPill
+                className={classNames(
+                  "__wab_instance",
+                  sty.howWeDoItPill__eQoR
+                )}
+              />
+
+              <HowWeDoItPill
+                className={classNames(
+                  "__wab_instance",
+                  sty.howWeDoItPill__sfXhn
+                )}
+              />
+
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
+                <div
+                  data-plasmic-name={"figmaPaste3"}
+                  data-plasmic-override={overrides.figmaPaste3}
+                  className={classNames(projectcss.all, sty.figmaPaste3)}
+                >
+                  {(
+                    hasVariant(globalVariants, "desktop", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"pill5"}
+                      data-plasmic-override={overrides.pill5}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.pill5)}
+                    >
+                      <div
+                        data-plasmic-name={"pill6"}
+                        data-plasmic-override={overrides.pill6}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.pill6
+                        )}
+                      >
+                        {"how we do it"}
+                      </div>
+                    </p.Stack>
+                  ) : null}
+                  {(
+                    hasVariant(globalVariants, "desktop", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___9HvJv
+                      )}
+                    >
+                      <React.Fragment>
+                        <React.Fragment>{""}</React.Fragment>
+                        {
+                          <h2
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.h2,
+                              projectcss.__wab_text,
+                              sty.h2__nigf6
+                            )}
+                          >
+                            <React.Fragment>
+                              <span
+                                className={
+                                  "plasmic_default__all plasmic_default__span"
+                                }
+                                style={{ color: "#0F5CBF" }}
+                              >
+                                {"Relationship Focussed"}
+                              </span>
+                            </React.Fragment>
+                          </h2>
+                        }
+                        <React.Fragment>
+                          {
+                            "\nRelationships are at the core of what we do. We believe that Family Offices are about relationships and trust.\n\nBy being able to privately and securely send and receive electronic documents , end-to-end encrypted messaging and the ability to do accurate calculations in a timely manner helps increase trust, reduces the risk of data theft and makes this tool suited for family office service providers or private individuals with financial acumen."
+                          }
+                        </React.Fragment>
+                      </React.Fragment>
+                    </div>
+                  ) : null}
+                  {(
+                    hasVariant(globalVariants, "desktop", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__cpf6P)}
+                      displayHeight={"506px" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"499px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/cloud_wealth/images/groupChat1Png.png",
+                        fullWidth: 499,
+                        fullHeight: 506,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  ) : null}
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__b4Pxw
+                    )}
+                  >
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FFFFFF" }}
+                      >
+                        {
+                          "According to a recent study conducted by Credit Suisse, “...Generational Family Wealth is most often created by planning strategically, on a consistent basis”. Create an effective, sustainable strategy by having the right information at your disposal. From Personal and Corporate Financial Planning, to Estate Planning, Trust Planning and everything in between, The CloudWealth array of calculators will arm you with more information than ever before."
+                        }
+                      </span>
+                    </React.Fragment>
+                  </div>
+
+                  <div
+                    data-plasmic-name={"rectangle21"}
+                    data-plasmic-override={overrides.rectangle21}
+                    className={classNames(projectcss.all, sty.rectangle21)}
+                  >
+                    {(
+                      hasVariant(globalVariants, "desktop", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <p.Stack
+                        as={"div"}
+                        data-plasmic-name={"pill7"}
+                        data-plasmic-override={overrides.pill7}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.pill7)}
+                      >
+                        <div
+                          data-plasmic-name={"pill8"}
+                          data-plasmic-override={overrides.pill8}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.pill8
+                          )}
+                        >
+                          {"future-proof"}
+                        </div>
+                      </p.Stack>
+                    ) : null}
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__thPxP)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__h3VM
+                        )}
+                      >
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+                          {(
+                            hasVariant(globalVariants, "desktop", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <h2
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h2,
+                                projectcss.__wab_text,
+                                sty.h2__eRgIp
+                              )}
+                            >
+                              <React.Fragment>
+                                <span
+                                  className={
+                                    "plasmic_default__all plasmic_default__span"
+                                  }
+                                  style={{ color: "#FFFFFF" }}
+                                >
+                                  {"A Strategically Focussed Mindset"}
+                                </span>
+                              </React.Fragment>
+                            </h2>
+                          ) : null}
+                          <React.Fragment>{""}</React.Fragment>
+                        </React.Fragment>
+                      </div>
+                    </div>
+
+                    {(
+                      hasVariant(globalVariants, "desktop", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__v9XL
+                        )}
+                      >
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img__yDDsK)}
+                          displayHeight={"auto" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"auto" as const}
+                          loading={"lazy" as const}
+                          src={{
+                            src: "/plasmic/cloud_wealth/images/financialAdvisor21Png.png",
+                            fullWidth: 499,
+                            fullHeight: 506,
+                            aspectRatio: undefined
+                          }}
+                        />
+
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img__kJxyM)}
+                          displayHeight={"301px" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"556px" as const}
+                          loading={"lazy" as const}
+                          src={{
+                            src: "/plasmic/cloud_wealth/images/financialAdvisor31Png.png",
+                            fullWidth: 556,
+                            fullHeight: 301,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </div>
+                    ) : null}
+                  </div>
+                </div>
+              ) : null}
+            </div>
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <h1
+              data-plasmic-name={"h1"}
+              data-plasmic-override={overrides.h1}
+              className={classNames(
+                projectcss.all,
+                projectcss.h1,
+                projectcss.__wab_text,
+                sty.h1
+              )}
+            >
+              {"A Strategically Focussed Mindset"}
+            </h1>
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__tRpal
+              )}
+            >
+              <React.Fragment>
+                <span
+                  className={"plasmic_default__all plasmic_default__span"}
+                  style={{ color: "#FFFFFF" }}
+                >
+                  {
+                    "According to a recent study conducted by Credit Suisse, “...Generational Family Wealth is most often created by planning strategically, on a consistent basis”. Create an effective, sustainable strategy by having the right information at your disposal. From Personal and Corporate Financial Planning, to Estate Planning, Trust Planning and everything in between, The CloudWealth array of calculators will arm you with more information than ever before."
+                  }
+                </span>
+              </React.Fragment>
+            </div>
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <div className={classNames(projectcss.all, sty.freeBox__bI26)}>
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : false
+              ) ? (
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__nusCq
                   )}
                 >
                   <React.Fragment>
@@ -408,79 +985,125 @@ function PlasmicAboutUs__RenderFunc(props: {
                     </span>
                   </React.Fragment>
                 </div>
-              </div>
-
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"pill3"}
-                data-plasmic-override={overrides.pill3}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.pill3)}
-              >
+              ) : null}
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
                 <div
-                  data-plasmic-name={"pill4"}
-                  data-plasmic-override={overrides.pill4}
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.pill4
+                    sty.text__yKsh
                   )}
                 >
-                  {"future-proof"}
+                  {""}
                 </div>
-              </p.Stack>
-
-              <div className={classNames(projectcss.all, sty.freeBox__jw1Fn)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img___5CbG2)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  loading={"lazy" as const}
-                  src={{
-                    src: "/plasmic/cloud_wealth/images/financialAdvisor21Png.png",
-                    fullWidth: 499,
-                    fullHeight: 506,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__hdNid)}
-                  displayHeight={"301px" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"556px" as const}
-                  loading={"lazy" as const}
-                  src={{
-                    src: "/plasmic/cloud_wealth/images/financialAdvisor31Png.png",
-                    fullWidth: 556,
-                    fullHeight: 301,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
+              ) : null}
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.freeBox__iStzz)}>
+                  {(
+                    hasVariant(globalVariants, "desktop", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <FooterDesktop1
+                      data-plasmic-name={"footerDesktop1"}
+                      data-plasmic-override={overrides.footerDesktop1}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.footerDesktop1
+                      )}
+                    />
+                  ) : null}
+                  {(
+                    hasVariant(globalVariants, "desktop", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <PrivacyPolicyLinks
+                      data-plasmic-name={"privacyPolicyLinks"}
+                      data-plasmic-override={overrides.privacyPolicyLinks}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.privacyPolicyLinks
+                      )}
+                    />
+                  ) : null}
+                  {(
+                    hasVariant(globalVariants, "desktop", "mobileOnly")
+                      ? true
+                      : false
+                  ) ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__fvNue
+                      )}
+                    >
+                      {
+                        "Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures. Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate integrated processes through technically sound intellectual capital. "
+                      }
+                    </div>
+                  ) : null}
+                </div>
+              ) : null}
             </div>
-          </div>
-
-          <FooterLine
-            data-plasmic-name={"footerLine"}
-            data-plasmic-override={overrides.footerLine}
-            className={classNames("__wab_instance", sty.footerLine)}
-          />
-
-          <CwFooter
-            data-plasmic-name={"cwFooter"}
-            data-plasmic-override={overrides.cwFooter}
-            className={classNames("__wab_instance", sty.cwFooter)}
-          />
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : false
+          ) ? (
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__r2DcL
+              )}
+            >
+              <React.Fragment>
+                <span
+                  className={"plasmic_default__all plasmic_default__span"}
+                  style={{ color: "#FFFFFF" }}
+                >
+                  {
+                    "According to a recent study conducted by Credit Suisse, “...Generational Family Wealth is most often created by planning strategically, on a consistent basis”. Create an effective, sustainable strategy by having the right information at your disposal. From Personal and Corporate Financial Planning, to Estate Planning, Trust Planning and everything in between, The CloudWealth array of calculators will arm you with more information than ever before."
+                  }
+                </span>
+              </React.Fragment>
+            </div>
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__v3Htl
+              )}
+            >
+              {"Enter some text"}
+            </div>
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__ce9To
+              )}
+            >
+              {"Enter some text"}
+            </div>
+          ) : null}
         </p.Stack>
       </div>
     </React.Fragment>
@@ -498,15 +1121,21 @@ const PlasmicDescendants = {
     "rectangle",
     "rectangle23",
     "frame7",
-    "footer",
     "figmaPaste2",
-    "pill",
-    "pill2",
     "rectangle20",
     "pill3",
     "pill4",
     "footerLine",
-    "cwFooter"
+    "cwFooter",
+    "figmaPaste3",
+    "pill5",
+    "pill6",
+    "rectangle21",
+    "pill7",
+    "pill8",
+    "h1",
+    "footerDesktop1",
+    "privacyPolicyLinks"
   ],
   header: ["header"],
   figmaPaste: [
@@ -524,22 +1153,28 @@ const PlasmicDescendants = {
   rectangle: ["rectangle"],
   rectangle23: ["rectangle23", "frame7"],
   frame7: ["frame7"],
-  footer: ["footer"],
-  figmaPaste2: [
-    "figmaPaste2",
-    "pill",
-    "pill2",
-    "rectangle20",
-    "pill3",
-    "pill4"
-  ],
-  pill: ["pill", "pill2"],
-  pill2: ["pill2"],
+  figmaPaste2: ["figmaPaste2", "rectangle20", "pill3", "pill4"],
   rectangle20: ["rectangle20", "pill3", "pill4"],
   pill3: ["pill3", "pill4"],
   pill4: ["pill4"],
   footerLine: ["footerLine"],
-  cwFooter: ["cwFooter"]
+  cwFooter: ["cwFooter"],
+  figmaPaste3: [
+    "figmaPaste3",
+    "pill5",
+    "pill6",
+    "rectangle21",
+    "pill7",
+    "pill8"
+  ],
+  pill5: ["pill5", "pill6"],
+  pill6: ["pill6"],
+  rectangle21: ["rectangle21", "pill7", "pill8"],
+  pill7: ["pill7", "pill8"],
+  pill8: ["pill8"],
+  h1: ["h1"],
+  footerDesktop1: ["footerDesktop1"],
+  privacyPolicyLinks: ["privacyPolicyLinks"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -554,15 +1189,21 @@ type NodeDefaultElementType = {
   rectangle: "div";
   rectangle23: "div";
   frame7: "div";
-  footer: typeof Footer;
   figmaPaste2: "div";
-  pill: "div";
-  pill2: "div";
   rectangle20: "div";
   pill3: "div";
   pill4: "div";
   footerLine: typeof FooterLine;
   cwFooter: typeof CwFooter;
+  figmaPaste3: "div";
+  pill5: "div";
+  pill6: "div";
+  rectangle21: "div";
+  pill7: "div";
+  pill8: "div";
+  h1: "h1";
+  footerDesktop1: typeof FooterDesktop1;
+  privacyPolicyLinks: typeof PrivacyPolicyLinks;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -634,15 +1275,21 @@ export const PlasmicAboutUs = Object.assign(
     rectangle: makeNodeComponent("rectangle"),
     rectangle23: makeNodeComponent("rectangle23"),
     frame7: makeNodeComponent("frame7"),
-    footer: makeNodeComponent("footer"),
     figmaPaste2: makeNodeComponent("figmaPaste2"),
-    pill: makeNodeComponent("pill"),
-    pill2: makeNodeComponent("pill2"),
     rectangle20: makeNodeComponent("rectangle20"),
     pill3: makeNodeComponent("pill3"),
     pill4: makeNodeComponent("pill4"),
     footerLine: makeNodeComponent("footerLine"),
     cwFooter: makeNodeComponent("cwFooter"),
+    figmaPaste3: makeNodeComponent("figmaPaste3"),
+    pill5: makeNodeComponent("pill5"),
+    pill6: makeNodeComponent("pill6"),
+    rectangle21: makeNodeComponent("rectangle21"),
+    pill7: makeNodeComponent("pill7"),
+    pill8: makeNodeComponent("pill8"),
+    h1: makeNodeComponent("h1"),
+    footerDesktop1: makeNodeComponent("footerDesktop1"),
+    privacyPolicyLinks: makeNodeComponent("privacyPolicyLinks"),
 
     // Metadata about props expected for PlasmicAboutUs
     internalVariantProps: PlasmicAboutUs__VariantProps,

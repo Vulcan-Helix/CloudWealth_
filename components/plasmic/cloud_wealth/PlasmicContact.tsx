@@ -38,6 +38,8 @@ import Header from "../../Header"; // plasmic-import: 9KxG1LQhTfZ-fr/component
 import Footer from "../../Footer"; // plasmic-import: JfbLrw7cZCfTIu/component
 import CwFooter from "../../CwFooter"; // plasmic-import: wco-GCH2Qp/component
 
+import { useScreenVariants as useScreenVariantshT8MqvJo0QuvrA } from "./PlasmicGlobalVariant__Desktop"; // plasmic-import: hT8MQVJo0quvrA/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_cloud_wealth.module.css"; // plasmic-import: 7iST1GVY7MEDdpjnrPuCNJ/projectcss
@@ -67,12 +69,12 @@ export type PlasmicContact__OverridesType = {
   layer1?: p.Flex<"div">;
   rectangle?: p.Flex<"div">;
   rectangle26?: p.Flex<"div">;
+  span?: p.Flex<"span">;
   frame27?: p.Flex<"div">;
   rectangle31?: p.Flex<"div">;
   rectangle32?: p.Flex<"div">;
   button3?: p.Flex<"div">;
   button4?: p.Flex<"div">;
-  blockquote?: p.Flex<"blockquote">;
   button?: p.Flex<"div">;
   button2?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
@@ -104,6 +106,10 @@ function PlasmicContact__RenderFunc(props: {
   const currentUser = p.useCurrentUser?.() || {};
 
   const [$queries, setDollarQueries] = React.useState({});
+
+  const globalVariants = ensureGlobalVariants({
+    desktop: useScreenVariantshT8MqvJo0QuvrA()
+  });
 
   return (
     <React.Fragment>
@@ -178,16 +184,50 @@ function PlasmicContact__RenderFunc(props: {
                         data-plasmic-name={"rectangle"}
                         data-plasmic-override={overrides.rectangle}
                         className={classNames(projectcss.all, sty.rectangle)}
-                      />
+                      >
+                        {(
+                          hasVariant(globalVariants, "desktop", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__bi6Ww
+                            )}
+                          >
+                            {"Enter some text"}
+                          </div>
+                        ) : null}
+                        {(
+                          hasVariant(globalVariants, "desktop", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__qDqoy
+                            )}
+                          >
+                            {"Enter some text"}
+                          </div>
+                        ) : null}
+
+                        <div
+                          data-plasmic-name={"rectangle26"}
+                          data-plasmic-override={overrides.rectangle26}
+                          className={classNames(
+                            projectcss.all,
+                            sty.rectangle26
+                          )}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <div
-                  data-plasmic-name={"rectangle26"}
-                  data-plasmic-override={overrides.rectangle26}
-                  className={classNames(projectcss.all, sty.rectangle26)}
-                />
               </div>
 
               <div
@@ -197,28 +237,125 @@ function PlasmicContact__RenderFunc(props: {
                   sty.text__h7Skn
                 )}
               >
-                <React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#197BD2" }}
-                  >
-                    {"Reach Out"}
-                  </span>
-                  <React.Fragment>{"\n"}</React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#197BD2" }}
-                  >
-                    {"to Us "}
-                  </span>
-                  <React.Fragment>{""}</React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#A8A0D9" }}
-                  >
-                    {"Today"}
-                  </span>
-                </React.Fragment>
+                {hasVariant(globalVariants, "desktop", "mobileOnly") ? (
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#197BD2" }}
+                    >
+                      {"Reach Out"}
+                    </span>
+                    <React.Fragment>{"\n"}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#197BD2" }}
+                    >
+                      {"to Us "}
+                    </span>
+                    <React.Fragment>{""}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#A8A0D9" }}
+                    >
+                      {"Today"}
+                    </span>
+                    <React.Fragment>{"\n"}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#A8A0D9" }}
+                    >
+                      {""}
+                    </span>
+                    <React.Fragment>{"\n"}</React.Fragment>
+                    {
+                      <blockquote
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.blockquote___82FRi
+                        )}
+                      >
+                        {hasVariant(globalVariants, "desktop", "mobileOnly") ? (
+                          <React.Fragment>
+                            <React.Fragment>{""}</React.Fragment>
+                            {(
+                              hasVariant(
+                                globalVariants,
+                                "desktop",
+                                "mobileOnly"
+                              )
+                                ? true
+                                : true
+                            ) ? (
+                              <span
+                                data-plasmic-name={"span"}
+                                data-plasmic-override={overrides.span}
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.span,
+                                  projectcss.__wab_text,
+                                  projectcss.plasmic_default__inline,
+                                  sty.span
+                                )}
+                              >
+                                <React.Fragment>
+                                  <span
+                                    className={
+                                      "plasmic_default__all plasmic_default__span"
+                                    }
+                                    style={{ color: "#000000" }}
+                                  >
+                                    {
+                                      "Let’s connect and discuss your financial options and plan for your future as well as the future of the next generations to come."
+                                    }
+                                  </span>
+                                </React.Fragment>
+                              </span>
+                            ) : null}
+                            <React.Fragment>{""}</React.Fragment>
+                          </React.Fragment>
+                        ) : (
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ color: "#000000" }}
+                            >
+                              {
+                                "Let’s connect and discuss your financial options and plan for your future as well as the future of the next generations to come."
+                              }
+                            </span>
+                          </React.Fragment>
+                        )}
+                      </blockquote>
+                    }
+                    <React.Fragment>{""}</React.Fragment>
+                  </React.Fragment>
+                ) : (
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#197BD2" }}
+                    >
+                      {"Reach Out"}
+                    </span>
+                    <React.Fragment>{"\n"}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#197BD2" }}
+                    >
+                      {"to Us "}
+                    </span>
+                    <React.Fragment>{""}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#A8A0D9" }}
+                    >
+                      {"Today"}
+                    </span>
+                  </React.Fragment>
+                )}
               </div>
 
               <p.Stack
@@ -228,17 +365,23 @@ function PlasmicContact__RenderFunc(props: {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.frame27)}
               >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__cgbUu
-                  )}
-                >
-                  {
-                    "Let’s connect and discuss your financial options and plan for your future as well as the future of the next generations to come."
-                  }
-                </div>
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__cgbUu
+                    )}
+                  >
+                    {
+                      "Let’s connect and discuss your financial options and plan for your future as well as the future of the next generations to come."
+                    }
+                  </div>
+                ) : null}
               </p.Stack>
 
               <div
@@ -313,12 +456,10 @@ function PlasmicContact__RenderFunc(props: {
                   <React.Fragment>{"\n"}</React.Fragment>
                   {
                     <blockquote
-                      data-plasmic-name={"blockquote"}
-                      data-plasmic-override={overrides.blockquote}
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.blockquote
+                        sty.blockquote__ro0F
                       )}
                     >
                       <React.Fragment>
@@ -658,12 +799,12 @@ const PlasmicDescendants = {
     "layer1",
     "rectangle",
     "rectangle26",
+    "span",
     "frame27",
     "rectangle31",
     "rectangle32",
     "button3",
     "button4",
-    "blockquote",
     "button",
     "button2",
     "h1",
@@ -683,12 +824,12 @@ const PlasmicDescendants = {
     "layer1",
     "rectangle",
     "rectangle26",
+    "span",
     "frame27",
     "rectangle31",
     "rectangle32",
     "button3",
     "button4",
-    "blockquote",
     "button",
     "button2",
     "h1",
@@ -704,12 +845,12 @@ const PlasmicDescendants = {
     "layer1",
     "rectangle",
     "rectangle26",
+    "span",
     "frame27",
     "rectangle31",
     "rectangle32",
     "button3",
     "button4",
-    "blockquote",
     "button",
     "button2",
     "h1",
@@ -725,17 +866,17 @@ const PlasmicDescendants = {
     "rectangle",
     "rectangle26"
   ],
-  gradient1: ["gradient1", "layer2", "layer1", "rectangle"],
-  layer2: ["layer2", "layer1", "rectangle"],
-  layer1: ["layer1", "rectangle"],
-  rectangle: ["rectangle"],
+  gradient1: ["gradient1", "layer2", "layer1", "rectangle", "rectangle26"],
+  layer2: ["layer2", "layer1", "rectangle", "rectangle26"],
+  layer1: ["layer1", "rectangle", "rectangle26"],
+  rectangle: ["rectangle", "rectangle26"],
   rectangle26: ["rectangle26"],
+  span: ["span"],
   frame27: ["frame27"],
   rectangle31: ["rectangle31"],
   rectangle32: ["rectangle32", "button3", "button4"],
   button3: ["button3", "button4"],
   button4: ["button4"],
-  blockquote: ["blockquote"],
   button: ["button", "button2"],
   button2: ["button2"],
   h1: ["h1"],
@@ -759,12 +900,12 @@ type NodeDefaultElementType = {
   layer1: "div";
   rectangle: "div";
   rectangle26: "div";
+  span: "span";
   frame27: "div";
   rectangle31: "div";
   rectangle32: "div";
   button3: "div";
   button4: "div";
-  blockquote: "blockquote";
   button: "div";
   button2: "div";
   h1: "h1";
@@ -845,12 +986,12 @@ export const PlasmicContact = Object.assign(
     layer1: makeNodeComponent("layer1"),
     rectangle: makeNodeComponent("rectangle"),
     rectangle26: makeNodeComponent("rectangle26"),
+    span: makeNodeComponent("span"),
     frame27: makeNodeComponent("frame27"),
     rectangle31: makeNodeComponent("rectangle31"),
     rectangle32: makeNodeComponent("rectangle32"),
     button3: makeNodeComponent("button3"),
     button4: makeNodeComponent("button4"),
-    blockquote: makeNodeComponent("blockquote"),
     button: makeNodeComponent("button"),
     button2: makeNodeComponent("button2"),
     h1: makeNodeComponent("h1"),
