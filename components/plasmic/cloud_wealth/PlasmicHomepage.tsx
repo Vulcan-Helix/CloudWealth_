@@ -218,7 +218,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           )}
                         >
                           {
-                            "Instant, secure access to all of your financial and fiduciary information in a single, unified view, a real-time virtual round-table for all your advisors."
+                            "Poep Instant, secure access to all of your financial and fiduciary information in a single, unified view, a real-time virtual round-table for all your advisors."
                           }
                         </div>
 
