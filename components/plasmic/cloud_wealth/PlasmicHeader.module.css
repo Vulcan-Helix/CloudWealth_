@@ -101,6 +101,35 @@
   > img {
   margin-left: 29px;
 }
+@media (min-width: 0px) and (max-width: 767px) {
+  .navigationItems2 {
+    margin-left: 46px;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .navigationItems2 > :global(.__wab_flex-container) {
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: stretch;
+    margin-left: calc(0px - 44px);
+    width: calc(100% + 44px);
+    margin-top: calc(0px - 0px);
+    height: calc(100% + 0px);
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .navigationItems2 > :global(.__wab_flex-container) > *,
+  .navigationItems2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+  .navigationItems2 > :global(.__wab_flex-container) > picture > img,
+  .navigationItems2
+    > :global(.__wab_flex-container)
+    > :global(.__wab_slot)
+    > picture
+    > img {
+    margin-left: 44px;
+    margin-top: 0px;
+  }
+}
 .text__sIJH {
   display: block;
   font-size: 18px;

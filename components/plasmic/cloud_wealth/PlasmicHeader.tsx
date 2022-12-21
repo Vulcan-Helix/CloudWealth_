@@ -36,6 +36,8 @@ import {
 } from "@plasmicapp/react-web";
 import Button from "../../Button"; // plasmic-import: hpLAsCB6dkK5a/component
 
+import { useScreenVariants as useScreenVariantshT8MqvJo0QuvrA } from "./PlasmicGlobalVariant__Desktop"; // plasmic-import: hT8MQVJo0quvrA/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_cloud_wealth.module.css"; // plasmic-import: 7iST1GVY7MEDdpjnrPuCNJ/projectcss
@@ -95,6 +97,10 @@ function PlasmicHeader__RenderFunc(props: {
   const currentUser = p.useCurrentUser?.() || {};
 
   const [$queries, setDollarQueries] = React.useState({});
+
+  const globalVariants = ensureGlobalVariants({
+    desktop: useScreenVariantshT8MqvJo0QuvrA()
+  });
 
   return (
     <nav
