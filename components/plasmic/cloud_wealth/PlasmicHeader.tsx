@@ -34,11 +34,14 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import Button from "../../Button"; // plasmic-import: hpLAsCB6dkK5a/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_cloud_wealth.module.css"; // plasmic-import: 7iST1GVY7MEDdpjnrPuCNJ/projectcss
 import sty from "./PlasmicHeader.module.css"; // plasmic-import: 9KxG1LQhTfZ-fr/css
+
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: LSNuBBNZXUjC6e/icon
 
 export type PlasmicHeader__VariantMembers = {};
 export type PlasmicHeader__VariantsArgs = {};
@@ -65,8 +68,7 @@ export type PlasmicHeader__OverridesType = {
   rectangle6?: p.Flex<"div">;
   reachOut?: p.Flex<"div">;
   rectangle7?: p.Flex<"div">;
-  frame1?: p.Flex<"div">;
-  frame2?: p.Flex<"div">;
+  freeBox?: p.Flex<"div">;
 };
 
 export interface DefaultHeaderProps {
@@ -109,9 +111,11 @@ function PlasmicHeader__RenderFunc(props: {
         sty.navbar
       )}
     >
-      <div
+      <p.Stack
+        as={"div"}
         data-plasmic-name={"navigation"}
         data-plasmic-override={overrides.navigation}
+        hasGap={true}
         className={classNames(projectcss.all, sty.navigation)}
       >
         <p.PlasmicImg
@@ -289,37 +293,28 @@ function PlasmicHeader__RenderFunc(props: {
         </div>
 
         <div
-          data-plasmic-name={"frame1"}
-          data-plasmic-override={overrides.frame1}
-          className={classNames(projectcss.all, sty.frame1)}
+          data-plasmic-name={"freeBox"}
+          data-plasmic-override={overrides.freeBox}
+          className={classNames(projectcss.all, sty.freeBox)}
         >
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__cIEy
-            )}
+          <Button
+            className={classNames("__wab_instance", sty.button__umJhi)}
+            color={"blue" as const}
+            size={"minimal" as const}
           >
             {"Login"}
-          </div>
-        </div>
+          </Button>
 
-        <div
-          data-plasmic-name={"frame2"}
-          data-plasmic-override={overrides.frame2}
-          className={classNames(projectcss.all, sty.frame2)}
-        >
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__vVcnS
-            )}
+          <Button
+            className={classNames("__wab_instance", sty.button__hJn82)}
+            color={"blue" as const}
+            shape={"rounded" as const}
+            size={"minimal" as const}
           >
             {"Register"}
-          </div>
+          </Button>
         </div>
-      </div>
+      </p.Stack>
     </nav>
   ) as React.ReactElement | null;
 }
@@ -341,8 +336,7 @@ const PlasmicDescendants = {
     "rectangle6",
     "reachOut",
     "rectangle7",
-    "frame1",
-    "frame2"
+    "freeBox"
   ],
   navigation: [
     "navigation",
@@ -359,8 +353,7 @@ const PlasmicDescendants = {
     "rectangle6",
     "reachOut",
     "rectangle7",
-    "frame1",
-    "frame2"
+    "freeBox"
   ],
   img: ["img"],
   navigationItems: [
@@ -400,8 +393,7 @@ const PlasmicDescendants = {
   rectangle6: ["rectangle6"],
   reachOut: ["reachOut", "rectangle7"],
   rectangle7: ["rectangle7"],
-  frame1: ["frame1"],
-  frame2: ["frame2"]
+  freeBox: ["freeBox"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -422,8 +414,7 @@ type NodeDefaultElementType = {
   rectangle6: "div";
   reachOut: "div";
   rectangle7: "div";
-  frame1: "div";
-  frame2: "div";
+  freeBox: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -501,8 +492,7 @@ export const PlasmicHeader = Object.assign(
     rectangle6: makeNodeComponent("rectangle6"),
     reachOut: makeNodeComponent("reachOut"),
     rectangle7: makeNodeComponent("rectangle7"),
-    frame1: makeNodeComponent("frame1"),
-    frame2: makeNodeComponent("frame2"),
+    freeBox: makeNodeComponent("freeBox"),
 
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,
