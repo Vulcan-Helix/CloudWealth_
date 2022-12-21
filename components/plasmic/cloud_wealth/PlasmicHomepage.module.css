@@ -160,7 +160,7 @@
   font-size: 24px;
   transform: translateX(59px) translateY(0px) translateZ(0px);
   padding-bottom: 145px;
-  margin-top: -5px;
+  margin-top: 74px;
   padding-top: 0px;
   margin-bottom: 0px;
   min-width: 0;
@@ -192,6 +192,7 @@
   max-width: 100%;
   width: 314px;
   margin-left: 59px;
+  margin-right: 23px;
   flex-shrink: 0;
 }
 @media (min-width: 0px) and (max-width: 767px) {
@@ -244,6 +245,9 @@
   object-fit: cover;
   width: 1em;
   height: 1em;
+}
+.text__n0Rh {
+  text-align: right;
 }
 .svg___793Vy {
   position: relative;

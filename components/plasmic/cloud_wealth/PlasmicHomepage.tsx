@@ -281,7 +281,15 @@ function PlasmicHomepage__RenderFunc(props: {
                               )}
                               color={"blue" as const}
                             >
-                              {"Join the Waitlist"}
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__n0Rh
+                                )}
+                              >
+                                {"Join the Waitlist"}
+                              </div>
                             </Button>
                           </form>
                         ) : null}
