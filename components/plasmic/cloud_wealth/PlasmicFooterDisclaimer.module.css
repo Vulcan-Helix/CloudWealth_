@@ -1,0 +1,19 @@
+.root {
+  plasmic-display-none: true;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  text-align: justify;
+  position: relative;
+  background: linear-gradient(
+      var(--token-aN77bpSkmqYEuu),
+      var(--token-aN77bpSkmqYEuu)
+    ),
+    var(--token-aN77bpSkmqYEuu);
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .root {
+    display: block;
+  }
+}

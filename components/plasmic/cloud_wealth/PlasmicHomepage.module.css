@@ -1430,19 +1430,8 @@
     display: block;
   }
 }
-.text__qs4Pt {
+.footerDisclaimer:global(.__wab_instance) {
   position: relative;
-  plasmic-display-none: true;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  text-align: justify;
-  min-width: 0;
-}
-@media (min-width: 0px) and (max-width: 767px) {
-  .text__qs4Pt {
-    display: block;
-  }
 }
 .freeBox__rRBp {
   position: relative;

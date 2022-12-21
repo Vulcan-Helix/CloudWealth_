@@ -37,6 +37,10 @@ import {
 import Header from "../../Header"; // plasmic-import: 9KxG1LQhTfZ-fr/component
 import Footer from "../../Footer"; // plasmic-import: JfbLrw7cZCfTIu/component
 import CwFooter from "../../CwFooter"; // plasmic-import: wco-GCH2Qp/component
+import Button from "../../Button"; // plasmic-import: hpLAsCB6dkK5a/component
+import FooterDesktop1 from "../../FooterDesktop1"; // plasmic-import: B3-gyon6yF/component
+import PrivacyPolicyLinks from "../../PrivacyPolicyLinks"; // plasmic-import: fiOxnTwhXt/component
+import FooterDisclaimer from "../../FooterDisclaimer"; // plasmic-import: D8imCi-mX6/component
 
 import { useScreenVariants as useScreenVariantshT8MqvJo0QuvrA } from "./PlasmicGlobalVariant__Desktop"; // plasmic-import: hT8MQVJo0quvrA/globalVariant
 
@@ -47,6 +51,7 @@ import sty from "./PlasmicContact.module.css"; // plasmic-import: lb5bojnzK58b1B
 
 import Group10Icon from "./icons/PlasmicIcon__Group10"; // plasmic-import: chp6hT61Ry/icon
 import Frame3Icon from "./icons/PlasmicIcon__Frame3"; // plasmic-import: b08VtbKLSP/icon
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: LSNuBBNZXUjC6e/icon
 
 export type PlasmicContact__VariantMembers = {};
 export type PlasmicContact__VariantsArgs = {};
@@ -69,19 +74,22 @@ export type PlasmicContact__OverridesType = {
   layer1?: p.Flex<"div">;
   rectangle?: p.Flex<"div">;
   rectangle26?: p.Flex<"div">;
-  span?: p.Flex<"span">;
   frame27?: p.Flex<"div">;
   rectangle31?: p.Flex<"div">;
   rectangle32?: p.Flex<"div">;
   button3?: p.Flex<"div">;
   button4?: p.Flex<"div">;
-  button?: p.Flex<"div">;
   button2?: p.Flex<"div">;
-  h1?: p.Flex<"h1">;
   pill?: p.Flex<"div">;
   pill2?: p.Flex<"div">;
   footer?: p.Flex<typeof Footer>;
   cwFooter?: p.Flex<typeof CwFooter>;
+  rectangle27?: p.Flex<"div">;
+  pill3?: p.Flex<"div">;
+  pill4?: p.Flex<"div">;
+  footerDesktop1?: p.Flex<typeof FooterDesktop1>;
+  privacyPolicyLinks?: p.Flex<typeof PrivacyPolicyLinks>;
+  footerDisclaimer?: p.Flex<typeof FooterDisclaimer>;
 };
 
 export interface DefaultContactProps {}
@@ -149,41 +157,39 @@ function PlasmicContact__RenderFunc(props: {
             data-plasmic-override={overrides.mainSection}
             className={classNames(projectcss.all, sty.mainSection)}
           >
-            <div
-              data-plasmic-name={"reachOutHero"}
-              data-plasmic-override={overrides.reachOutHero}
-              className={classNames(projectcss.all, sty.reachOutHero)}
-            >
+            {(
+              hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+            ) ? (
               <div
-                data-plasmic-name={"rectangle23"}
-                data-plasmic-override={overrides.rectangle23}
-                className={classNames(projectcss.all, sty.rectangle23)}
-              />
-
-              <div
-                data-plasmic-name={"group18"}
-                data-plasmic-override={overrides.group18}
-                className={classNames(projectcss.all, sty.group18)}
+                data-plasmic-name={"reachOutHero"}
+                data-plasmic-override={overrides.reachOutHero}
+                className={classNames(projectcss.all, sty.reachOutHero)}
               >
                 <div
-                  data-plasmic-name={"gradient1"}
-                  data-plasmic-override={overrides.gradient1}
-                  className={classNames(projectcss.all, sty.gradient1)}
-                >
+                  data-plasmic-name={"rectangle23"}
+                  data-plasmic-override={overrides.rectangle23}
+                  className={classNames(projectcss.all, sty.rectangle23)}
+                />
+
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
                   <div
-                    data-plasmic-name={"layer2"}
-                    data-plasmic-override={overrides.layer2}
-                    className={classNames(projectcss.all, sty.layer2)}
+                    data-plasmic-name={"group18"}
+                    data-plasmic-override={overrides.group18}
+                    className={classNames(projectcss.all, sty.group18)}
                   >
-                    <div
-                      data-plasmic-name={"layer1"}
-                      data-plasmic-override={overrides.layer1}
-                      className={classNames(projectcss.all, sty.layer1)}
-                    >
+                    {(
+                      hasVariant(globalVariants, "desktop", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
                       <div
-                        data-plasmic-name={"rectangle"}
-                        data-plasmic-override={overrides.rectangle}
-                        className={classNames(projectcss.all, sty.rectangle)}
+                        data-plasmic-name={"gradient1"}
+                        data-plasmic-override={overrides.gradient1}
+                        className={classNames(projectcss.all, sty.gradient1)}
                       >
                         {(
                           hasVariant(globalVariants, "desktop", "mobileOnly")
@@ -191,93 +197,10 @@ function PlasmicContact__RenderFunc(props: {
                             : true
                         ) ? (
                           <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__bi6Ww
-                            )}
+                            data-plasmic-name={"layer2"}
+                            data-plasmic-override={overrides.layer2}
+                            className={classNames(projectcss.all, sty.layer2)}
                           >
-                            {"Enter some text"}
-                          </div>
-                        ) : null}
-                        {(
-                          hasVariant(globalVariants, "desktop", "mobileOnly")
-                            ? true
-                            : true
-                        ) ? (
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__qDqoy
-                            )}
-                          >
-                            {"Enter some text"}
-                          </div>
-                        ) : null}
-
-                        <div
-                          data-plasmic-name={"rectangle26"}
-                          data-plasmic-override={overrides.rectangle26}
-                          className={classNames(
-                            projectcss.all,
-                            sty.rectangle26
-                          )}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__h7Skn
-                )}
-              >
-                {hasVariant(globalVariants, "desktop", "mobileOnly") ? (
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#197BD2" }}
-                    >
-                      {"Reach Out"}
-                    </span>
-                    <React.Fragment>{"\n"}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#197BD2" }}
-                    >
-                      {"to Us "}
-                    </span>
-                    <React.Fragment>{""}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#A8A0D9" }}
-                    >
-                      {"Today"}
-                    </span>
-                    <React.Fragment>{"\n"}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#A8A0D9" }}
-                    >
-                      {""}
-                    </span>
-                    <React.Fragment>{"\n"}</React.Fragment>
-                    {
-                      <blockquote
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.blockquote___82FRi
-                        )}
-                      >
-                        {hasVariant(globalVariants, "desktop", "mobileOnly") ? (
-                          <React.Fragment>
-                            <React.Fragment>{""}</React.Fragment>
                             {(
                               hasVariant(
                                 globalVariants,
@@ -287,84 +210,80 @@ function PlasmicContact__RenderFunc(props: {
                                 ? true
                                 : true
                             ) ? (
-                              <span
-                                data-plasmic-name={"span"}
-                                data-plasmic-override={overrides.span}
+                              <div
+                                data-plasmic-name={"layer1"}
+                                data-plasmic-override={overrides.layer1}
                                 className={classNames(
                                   projectcss.all,
-                                  projectcss.span,
-                                  projectcss.__wab_text,
-                                  projectcss.plasmic_default__inline,
-                                  sty.span
+                                  sty.layer1
                                 )}
                               >
-                                <React.Fragment>
-                                  <span
-                                    className={
-                                      "plasmic_default__all plasmic_default__span"
-                                    }
-                                    style={{ color: "#000000" }}
-                                  >
-                                    {
-                                      "Let’s connect and discuss your financial options and plan for your future as well as the future of the next generations to come."
-                                    }
-                                  </span>
-                                </React.Fragment>
-                              </span>
-                            ) : null}
-                            <React.Fragment>{""}</React.Fragment>
-                          </React.Fragment>
-                        ) : (
-                          <React.Fragment>
-                            <span
-                              className={
-                                "plasmic_default__all plasmic_default__span"
-                              }
-                              style={{ color: "#000000" }}
-                            >
-                              {
-                                "Let’s connect and discuss your financial options and plan for your future as well as the future of the next generations to come."
-                              }
-                            </span>
-                          </React.Fragment>
-                        )}
-                      </blockquote>
-                    }
-                    <React.Fragment>{""}</React.Fragment>
-                  </React.Fragment>
-                ) : (
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#197BD2" }}
-                    >
-                      {"Reach Out"}
-                    </span>
-                    <React.Fragment>{"\n"}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#197BD2" }}
-                    >
-                      {"to Us "}
-                    </span>
-                    <React.Fragment>{""}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#A8A0D9" }}
-                    >
-                      {"Today"}
-                    </span>
-                  </React.Fragment>
-                )}
-              </div>
+                                <div
+                                  data-plasmic-name={"rectangle"}
+                                  data-plasmic-override={overrides.rectangle}
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.rectangle
+                                  )}
+                                >
+                                  {(
+                                    hasVariant(
+                                      globalVariants,
+                                      "desktop",
+                                      "mobileOnly"
+                                    )
+                                      ? true
+                                      : true
+                                  ) ? (
+                                    <div
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.__wab_text,
+                                        sty.text__bi6Ww
+                                      )}
+                                    >
+                                      {"Enter some text"}
+                                    </div>
+                                  ) : null}
+                                  {(
+                                    hasVariant(
+                                      globalVariants,
+                                      "desktop",
+                                      "mobileOnly"
+                                    )
+                                      ? true
+                                      : true
+                                  ) ? (
+                                    <div
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.__wab_text,
+                                        sty.text__qDqoy
+                                      )}
+                                    >
+                                      {"Enter some text"}
+                                    </div>
+                                  ) : null}
 
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"frame27"}
-                data-plasmic-override={overrides.frame27}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.frame27)}
-              >
+                                  <div
+                                    data-plasmic-name={"rectangle26"}
+                                    data-plasmic-override={
+                                      overrides.rectangle26
+                                    }
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.rectangle26
+                                    )}
+                                  />
+                                </div>
+                              </div>
+                            ) : null}
+                          </div>
+                        ) : null}
+                      </div>
+                    ) : null}
+                  </div>
+                ) : null}
                 {(
                   hasVariant(globalVariants, "desktop", "mobileOnly")
                     ? true
@@ -374,164 +293,809 @@ function PlasmicContact__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__cgbUu
+                      sty.text__h7Skn
                     )}
                   >
-                    {
-                      "Let’s connect and discuss your financial options and plan for your future as well as the future of the next generations to come."
-                    }
-                  </div>
-                ) : null}
-              </p.Stack>
-
-              <div
-                data-plasmic-name={"rectangle31"}
-                data-plasmic-override={overrides.rectangle31}
-                className={classNames(projectcss.all, sty.rectangle31)}
-              />
-
-              <div
-                data-plasmic-name={"rectangle32"}
-                data-plasmic-override={overrides.rectangle32}
-                className={classNames(projectcss.all, sty.rectangle32)}
-              >
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"button3"}
-                  data-plasmic-override={overrides.button3}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.button3)}
-                >
-                  <div
-                    data-plasmic-name={"button4"}
-                    data-plasmic-override={overrides.button4}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.button4
-                    )}
-                  >
-                    {"Contact a Sales Advisor"}
-                  </div>
-                </p.Stack>
-              </div>
-
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__z2SbY
-                )}
-              >
-                <React.Fragment>
-                  <React.Fragment>{""}</React.Fragment>
-                  {
-                    <h2
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h2,
-                        projectcss.__wab_text,
-                        sty.h2__iTxmb
-                      )}
-                    >
+                    {hasVariant(globalVariants, "desktop", "mobileOnly") ? (
                       <React.Fragment>
                         <span
                           className={
                             "plasmic_default__all plasmic_default__span"
                           }
-                          style={{ color: "#FEFEFE" }}
+                          style={{ color: "#197BD2" }}
                         >
-                          {"Specialized Sales Support"}
+                          {"Reach Out"}
+                        </span>
+                        <React.Fragment>{"\n"}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#197BD2" }}
+                        >
+                          {"to Us "}
+                        </span>
+                        <React.Fragment>{""}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#A8A0D9" }}
+                        >
+                          {"Today"}
+                        </span>
+                        <React.Fragment>{"\n"}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#A8A0D9" }}
+                        >
+                          {""}
+                        </span>
+                        <React.Fragment>{"\n"}</React.Fragment>
+                        {(
+                          hasVariant(globalVariants, "desktop", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <blockquote
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.blockquote___82FRi
+                            )}
+                          >
+                            {hasVariant(
+                              globalVariants,
+                              "desktop",
+                              "mobileOnly"
+                            ) ? (
+                              <React.Fragment>
+                                <React.Fragment>{""}</React.Fragment>
+                                {(
+                                  hasVariant(
+                                    globalVariants,
+                                    "desktop",
+                                    "mobileOnly"
+                                  )
+                                    ? true
+                                    : true
+                                ) ? (
+                                  <span
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.span,
+                                      projectcss.__wab_text,
+                                      projectcss.plasmic_default__inline,
+                                      sty.span__uXh3T
+                                    )}
+                                  >
+                                    <React.Fragment>
+                                      <span
+                                        className={
+                                          "plasmic_default__all plasmic_default__span"
+                                        }
+                                        style={{ color: "#000000" }}
+                                      >
+                                        {
+                                          "Let’s connect and discuss your financial options and plan for your future as well as the future of the next generations to come."
+                                        }
+                                      </span>
+                                    </React.Fragment>
+                                  </span>
+                                ) : null}
+                                <React.Fragment>{""}</React.Fragment>
+                              </React.Fragment>
+                            ) : (
+                              <React.Fragment>
+                                <span
+                                  className={
+                                    "plasmic_default__all plasmic_default__span"
+                                  }
+                                  style={{ color: "#000000" }}
+                                >
+                                  {
+                                    "Let’s connect and discuss your financial options and plan for your future as well as the future of the next generations to come."
+                                  }
+                                </span>
+                              </React.Fragment>
+                            )}
+                          </blockquote>
+                        ) : null}
+                        <React.Fragment>{""}</React.Fragment>
+                      </React.Fragment>
+                    ) : (
+                      <React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#197BD2" }}
+                        >
+                          {"Reach Out"}
+                        </span>
+                        <React.Fragment>{"\n"}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#197BD2" }}
+                        >
+                          {"to Us "}
+                        </span>
+                        <React.Fragment>{""}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#A8A0D9" }}
+                        >
+                          {"Today"}
                         </span>
                       </React.Fragment>
-                    </h2>
-                  }
+                    )}
+                  </div>
+                ) : null}
+
+                <p.Stack
+                  as={"div"}
+                  data-plasmic-name={"frame27"}
+                  data-plasmic-override={overrides.frame27}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.frame27)}
+                >
+                  {(
+                    hasVariant(globalVariants, "desktop", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__cgbUu
+                      )}
+                    >
+                      {
+                        "Let’s connect and discuss your financial options and plan for your future as well as the future of the next generations to come."
+                      }
+                    </div>
+                  ) : null}
+                </p.Stack>
+
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    data-plasmic-name={"rectangle31"}
+                    data-plasmic-override={overrides.rectangle31}
+                    className={classNames(projectcss.all, sty.rectangle31)}
+                  />
+                ) : null}
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    data-plasmic-name={"rectangle32"}
+                    data-plasmic-override={overrides.rectangle32}
+                    className={classNames(projectcss.all, sty.rectangle32)}
+                  >
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"button3"}
+                      data-plasmic-override={overrides.button3}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.button3)}
+                    >
+                      <div
+                        data-plasmic-name={"button4"}
+                        data-plasmic-override={overrides.button4}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.button4
+                        )}
+                      >
+                        {"Contact a Sales Advisor"}
+                      </div>
+                    </p.Stack>
+                  </div>
+                ) : null}
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__z2SbY
+                    )}
+                  >
+                    <React.Fragment>
+                      <React.Fragment>{""}</React.Fragment>
+                      {
+                        <h2
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h2,
+                            projectcss.__wab_text,
+                            sty.h2__iTxmb
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ color: "#FEFEFE" }}
+                            >
+                              {"Specialized Sales Support"}
+                            </span>
+                          </React.Fragment>
+                        </h2>
+                      }
+                      <React.Fragment>{""}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FEFEFE" }}
+                      >
+                        {""}
+                      </span>
+                      <React.Fragment>{"\n"}</React.Fragment>
+                      {(
+                        hasVariant(globalVariants, "desktop", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <blockquote
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.blockquote__ro0F
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ color: "#FEFEFE" }}
+                            >
+                              {
+                                "For business with more than 5 advisors and 5 assistants, we have a tailored and bespoke offering with discounted licensing fees. Make an appointment with a sales specialist to explore this option. "
+                              }
+                            </span>
+                          </React.Fragment>
+                        </blockquote>
+                      ) : null}
+                      <React.Fragment>{""}</React.Fragment>
+                    </React.Fragment>
+                  </div>
+                ) : null}
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___1Vy9P
+                  )}
+                >
+                  <React.Fragment>
+                    <React.Fragment>{""}</React.Fragment>
+                    {
+                      <h2
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h2,
+                          projectcss.__wab_text,
+                          sty.h2__gs3QK
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"How About We Show You?"}
+                          </span>
+                        </React.Fragment>
+                      </h2>
+                    }
+                    <React.Fragment>{""}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#FFFFFF" }}
+                    >
+                      {""}
+                    </span>
+                    <React.Fragment>{"\n"}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#FFFFFF" }}
+                    >
+                      {
+                        "Not sure if this will work for your business? Why not book a demo for us to show you how effective the tool is for Financial Advisors, Trustees and FIduciary Specialists. "
+                      }
+                    </span>
+                  </React.Fragment>
+                </div>
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__z1JpT)}
+                  displayHeight={"60px" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"41.782px" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/cloud_wealth/images/frame7.svg",
+                    fullWidth: 41.782,
+                    fullHeight: 60,
+                    aspectRatio: 0.7
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__xDh93)}
+                  displayHeight={"60px" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"68.93px" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/cloud_wealth/images/frame6.svg",
+                    fullWidth: 68.93,
+                    fullHeight: 60,
+                    aspectRatio: 1.15
+                  }}
+                />
+
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__tmtvO)}
+                  >
+                    <div
+                      data-plasmic-name={"button2"}
+                      data-plasmic-override={overrides.button2}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.button2
+                      )}
+                    >
+                      {"Book a Demo"}
+                    </div>
+                  </p.Stack>
+                ) : null}
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__mHfKx
+                    )}
+                  >
+                    <React.Fragment>
+                      <React.Fragment>{""}</React.Fragment>
+                      {
+                        <h1
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h1,
+                            projectcss.__wab_text,
+                            sty.h1__pzHyi
+                          )}
+                        >
+                          {"Contact the right people"}
+                        </h1>
+                      }
+                      <React.Fragment>
+                        {
+                          "\nAlready signed-up or just have general queries? Let’s help you make contact with the right person by clicking on the relevant link below. Our turnaround time is 24hours. If you have an urgent query, please mark the message as urgent in the subject line."
+                        }
+                      </React.Fragment>
+                    </React.Fragment>
+                  </div>
+                ) : null}
+                {(
+                  hasVariant(globalVariants, "desktop", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"pill"}
+                    data-plasmic-override={overrides.pill}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.pill)}
+                  >
+                    <div
+                      data-plasmic-name={"pill2"}
+                      data-plasmic-override={overrides.pill2}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.pill2
+                      )}
+                    >
+                      {"get in touch"}
+                    </div>
+                  </p.Stack>
+                ) : null}
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__thTnm
+                  )}
+                >
+                  <React.Fragment>
+                    <React.Fragment>{""}</React.Fragment>
+                    {
+                      <h6
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h6,
+                          projectcss.__wab_text,
+                          sty.h6__hOHpU
+                        )}
+                      >
+                        {"Sales & Development"}
+                      </h6>
+                    }
+                    <React.Fragment>{"sales@cloudwealth.io"}</React.Fragment>
+                  </React.Fragment>
+                </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__xAKdr
+                  )}
+                >
+                  <React.Fragment>
+                    <React.Fragment>{""}</React.Fragment>
+                    {
+                      <h6
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h6,
+                          projectcss.__wab_text,
+                          sty.h6__oVvIf
+                        )}
+                      >
+                        {"Financial Advisors"}
+                      </h6>
+                    }
+                    <React.Fragment>{"advisors@cloudwealth.io"}</React.Fragment>
+                  </React.Fragment>
+                </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__b2RW8
+                  )}
+                >
+                  <React.Fragment>
+                    <React.Fragment>{""}</React.Fragment>
+                    {
+                      <h6
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h6,
+                          projectcss.__wab_text,
+                          sty.h6__dOx4Q
+                        )}
+                      >
+                        {"Customer Care"}
+                      </h6>
+                    }
+                    <React.Fragment>{"care@cloudwealth.io"}</React.Fragment>
+                  </React.Fragment>
+                </div>
+
+                <Group10Icon
+                  className={classNames(projectcss.all, sty.svg___7Hikd)}
+                  role={"img"}
+                />
+
+                <Group10Icon
+                  className={classNames(projectcss.all, sty.svg__vymRc)}
+                  role={"img"}
+                />
+
+                <Group10Icon
+                  className={classNames(projectcss.all, sty.svg___3Nt7S)}
+                  role={"img"}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__duc8T)}
+                  displayHeight={"37px" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"42px" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/cloud_wealth/images/frame5.svg",
+                    fullWidth: 42,
+                    fullHeight: 37,
+                    aspectRatio: 1.135135
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__eTf4A)}
+                  displayHeight={"25px" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"43px" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/cloud_wealth/images/frame4.svg",
+                    fullWidth: 43,
+                    fullHeight: 25,
+                    aspectRatio: 1.72
+                  }}
+                />
+
+                <Frame3Icon
+                  className={classNames(projectcss.all, sty.svg___0SoxB)}
+                  role={"img"}
+                />
+              </div>
+            ) : null}
+
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__imk4Z
+              )}
+            >
+              {hasVariant(globalVariants, "desktop", "mobileOnly") ? (
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#197BD2" }}
+                  >
+                    {"Reach Out"}
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#197BD2" }}
+                  >
+                    {"to Us "}
+                  </span>
                   <React.Fragment>{""}</React.Fragment>
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#FEFEFE" }}
+                    style={{ color: "#A8A0D9" }}
+                  >
+                    {"Today"}
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#A8A0D9" }}
                   >
                     {""}
                   </span>
                   <React.Fragment>{"\n"}</React.Fragment>
-                  {
+                  {(
+                    hasVariant(globalVariants, "desktop", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
                     <blockquote
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.blockquote__ro0F
+                        sty.blockquote__g5Dww
                       )}
                     >
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ color: "#FEFEFE" }}
-                        >
-                          {
-                            "For business with more than 5 advisors and 5 assistants, we have a tailored and bespoke offering with discounted licensing fees. Make an appointment with a sales specialist to explore this option. "
-                          }
-                        </span>
-                      </React.Fragment>
+                      {hasVariant(globalVariants, "desktop", "mobileOnly") ? (
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+                          {(
+                            hasVariant(globalVariants, "desktop", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <span
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.span,
+                                projectcss.__wab_text,
+                                projectcss.plasmic_default__inline,
+                                sty.span__omwjS
+                              )}
+                            >
+                              <React.Fragment>
+                                <span
+                                  className={
+                                    "plasmic_default__all plasmic_default__span"
+                                  }
+                                  style={{ color: "#000000" }}
+                                >
+                                  {
+                                    "Let’s connect and discuss your financial options and plan for your future as well as the future of the next generations to come."
+                                  }
+                                </span>
+                              </React.Fragment>
+                            </span>
+                          ) : null}
+                          <React.Fragment>{""}</React.Fragment>
+                        </React.Fragment>
+                      ) : (
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#000000" }}
+                          >
+                            {
+                              "Let’s connect and discuss your financial options and plan for your future as well as the future of the next generations to come."
+                            }
+                          </span>
+                        </React.Fragment>
+                      )}
                     </blockquote>
-                  }
+                  ) : null}
                   <React.Fragment>{""}</React.Fragment>
                 </React.Fragment>
-              </div>
-
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text___1Vy9P
-                )}
-              >
+              ) : (
                 <React.Fragment>
-                  <React.Fragment>{""}</React.Fragment>
-                  {
-                    <h2
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h2,
-                        projectcss.__wab_text,
-                        sty.h2__gs3QK
-                      )}
-                    >
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ color: "#FFFFFF" }}
-                        >
-                          {"How About We Show You?"}
-                        </span>
-                      </React.Fragment>
-                    </h2>
-                  }
-                  <React.Fragment>{""}</React.Fragment>
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#FFFFFF" }}
+                    style={{ color: "#197BD2" }}
                   >
-                    {""}
+                    {"Reach Out"}
                   </span>
                   <React.Fragment>{"\n"}</React.Fragment>
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "#FFFFFF" }}
+                    style={{ color: "#197BD2" }}
                   >
-                    {
-                      "Not sure if this will work for your business? Why not book a demo for us to show you how effective the tool is for Financial Advisors, Trustees and FIduciary Specialists. "
-                    }
+                    {"to Us "}
+                  </span>
+                  <React.Fragment>{""}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#A8A0D9" }}
+                  >
+                    {"Today"}
                   </span>
                 </React.Fragment>
+              )}
+            </div>
+
+            {(
+              hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+            ) ? (
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__vo0An
+                )}
+              >
+                {
+                  "Let’s connect and discuss your financial options and plan for your future as well as the future of the next generations to come."
+                }
               </div>
+            ) : null}
+            {(
+              hasVariant(globalVariants, "desktop", "mobileOnly") ? true : false
+            ) ? (
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___8D0Hi
+                )}
+              >
+                {
+                  "Let’s connect and discuss your financial options and plan for your future as well as the future of the next generations to come."
+                }
+              </div>
+            ) : null}
+          </div>
+
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <Footer
+              data-plasmic-name={"footer"}
+              data-plasmic-override={overrides.footer}
+              className={classNames("__wab_instance", sty.footer)}
+            />
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <CwFooter
+              data-plasmic-name={"cwFooter"}
+              data-plasmic-override={overrides.cwFooter}
+              className={classNames("__wab_instance", sty.cwFooter)}
+            />
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : false
+          ) ? (
+            <div
+              data-plasmic-name={"rectangle27"}
+              data-plasmic-override={overrides.rectangle27}
+              className={classNames(projectcss.all, sty.rectangle27)}
+            />
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <div className={classNames(projectcss.all, sty.freeBox__cea6N)} />
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <div className={classNames(projectcss.all, sty.freeBox__oZUg)}>
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img___3FF6)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  loading={"lazy" as const}
+                />
+              ) : null}
 
               <p.PlasmicImg
                 alt={""}
-                className={classNames(sty.img__z1JpT)}
+                className={classNames(sty.img__hgult)}
                 displayHeight={"60px" as const}
                 displayMaxHeight={"none" as const}
                 displayMaxWidth={"100%" as const}
@@ -547,9 +1111,98 @@ function PlasmicContact__RenderFunc(props: {
                 }}
               />
 
+              <h1
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1__obCgt
+                )}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FEFEFE" }}
+                  >
+                    {"Specialized Sales Support"}
+                  </span>
+                </React.Fragment>
+              </h1>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__innVe
+                )}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FEFEFE" }}
+                  >
+                    {
+                      "For business with more than 5 advisors and 5 assistants, we have a tailored and bespoke offering with discounted licensing fees. Make an appointment with a sales specialist to explore this option. "
+                    }
+                  </span>
+                </React.Fragment>
+              </div>
+
+              <Button
+                className={classNames("__wab_instance", sty.button__gndra)}
+              >
+                {"Book a Demo"}
+              </Button>
+            </div>
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : false
+          ) ? (
+            <div className={classNames(projectcss.all, sty.freeBox___9UTl2)}>
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img___9Vtd1)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  loading={"lazy" as const}
+                />
+              ) : null}
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__xjYaW)}
+                  displayHeight={"60px" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"41.782px" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/cloud_wealth/images/frame7.svg",
+                    fullWidth: 41.782,
+                    fullHeight: 60,
+                    aspectRatio: 0.7
+                  }}
+                />
+              ) : null}
+
               <p.PlasmicImg
                 alt={""}
-                className={classNames(sty.img__xDh93)}
+                className={classNames(sty.img__bbnbV)}
                 displayHeight={"60px" as const}
                 displayMaxHeight={"none" as const}
                 displayMaxWidth={"100%" as const}
@@ -565,49 +1218,117 @@ function PlasmicContact__RenderFunc(props: {
                 }}
               />
 
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"button"}
-                data-plasmic-override={overrides.button}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.button)}
+              <h1
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1__b8Nz
+                )}
               >
-                <div
-                  data-plasmic-name={"button2"}
-                  data-plasmic-override={overrides.button2}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.button2
-                  )}
-                >
-                  {"Book a Demo"}
-                </div>
-              </p.Stack>
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FEFEFE" }}
+                  >
+                    {"How About We Show You?"}
+                  </span>
+                </React.Fragment>
+              </h1>
 
               <div
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__mHfKx
+                  sty.text__qfXdJ
+                )}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#FFFFFF" }}
+                  >
+                    {
+                      "Not sure if this will work for your business? Why not book a demo for us to show you how effective the tool is for Financial Advisors, Trustees and FIduciary Specialists. "
+                    }
+                  </span>
+                </React.Fragment>
+              </div>
+
+              <Button
+                className={classNames("__wab_instance", sty.button__m6MXn)}
+              >
+                {"Contact a Sales Advisor"}
+              </Button>
+            </div>
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <div className={classNames(projectcss.all, sty.freeBox__ojV4P)}>
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"pill3"}
+                data-plasmic-override={overrides.pill3}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.pill3)}
+              >
+                <div
+                  data-plasmic-name={"pill4"}
+                  data-plasmic-override={overrides.pill4}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.pill4
+                  )}
+                >
+                  {"get in touch"}
+                </div>
+              </p.Stack>
+
+              <h1
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1__cvOoO
+                )}
+              >
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#000000" }}
+                  >
+                    {"Contact the right people"}
+                  </span>
+                </React.Fragment>
+              </h1>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__ehipr
                 )}
               >
                 <React.Fragment>
                   <React.Fragment>{""}</React.Fragment>
-                  {
+                  {(
+                    hasVariant(globalVariants, "desktop", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
                     <h1
-                      data-plasmic-name={"h1"}
-                      data-plasmic-override={overrides.h1}
                       className={classNames(
                         projectcss.all,
                         projectcss.h1,
                         projectcss.__wab_text,
-                        sty.h1
+                        sty.h1__nIbHo
                       )}
                     >
-                      {"Contact the right people"}
+                      {"Contact the right peopl"}
                     </h1>
-                  }
+                  ) : null}
                   <React.Fragment>
                     {
                       "\nAlready signed-up or just have general queries? Let’s help you make contact with the right person by clicking on the relevant link below. Our turnaround time is 24hours. If you have an urgent query, please mark the message as urgent in the subject line."
@@ -615,171 +1336,538 @@ function PlasmicContact__RenderFunc(props: {
                   </React.Fragment>
                 </React.Fragment>
               </div>
-
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"pill"}
-                data-plasmic-override={overrides.pill}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.pill)}
-              >
-                <div
-                  data-plasmic-name={"pill2"}
-                  data-plasmic-override={overrides.pill2}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.pill2
-                  )}
-                >
-                  {"get in touch"}
-                </div>
-              </p.Stack>
-
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__thTnm
-                )}
-              >
-                <React.Fragment>
-                  <React.Fragment>{""}</React.Fragment>
-                  {
-                    <h6
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h6,
-                        projectcss.__wab_text,
-                        sty.h6__hOHpU
-                      )}
-                    >
-                      {"Sales & Development"}
-                    </h6>
-                  }
-                  <React.Fragment>{"sales@cloudwealth.io"}</React.Fragment>
-                </React.Fragment>
-              </div>
-
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__xAKdr
-                )}
-              >
-                <React.Fragment>
-                  <React.Fragment>{""}</React.Fragment>
-                  {
-                    <h6
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h6,
-                        projectcss.__wab_text,
-                        sty.h6__oVvIf
-                      )}
-                    >
-                      {"Financial Advisors"}
-                    </h6>
-                  }
-                  <React.Fragment>{"advisors@cloudwealth.io"}</React.Fragment>
-                </React.Fragment>
-              </div>
-
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__b2RW8
-                )}
-              >
-                <React.Fragment>
-                  <React.Fragment>{""}</React.Fragment>
-                  {
-                    <h6
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h6,
-                        projectcss.__wab_text,
-                        sty.h6__dOx4Q
-                      )}
-                    >
-                      {"Customer Care"}
-                    </h6>
-                  }
-                  <React.Fragment>{"care@cloudwealth.io"}</React.Fragment>
-                </React.Fragment>
-              </div>
-
-              <Group10Icon
-                className={classNames(projectcss.all, sty.svg___7Hikd)}
-                role={"img"}
-              />
-
-              <Group10Icon
-                className={classNames(projectcss.all, sty.svg__vymRc)}
-                role={"img"}
-              />
-
-              <Group10Icon
-                className={classNames(projectcss.all, sty.svg___3Nt7S)}
-                role={"img"}
-              />
-
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__duc8T)}
-                displayHeight={"37px" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"100%" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"42px" as const}
-                loading={"lazy" as const}
-                src={{
-                  src: "/plasmic/cloud_wealth/images/frame5.svg",
-                  fullWidth: 42,
-                  fullHeight: 37,
-                  aspectRatio: 1.135135
-                }}
-              />
-
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__eTf4A)}
-                displayHeight={"25px" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"100%" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"43px" as const}
-                loading={"lazy" as const}
-                src={{
-                  src: "/plasmic/cloud_wealth/images/frame4.svg",
-                  fullWidth: 43,
-                  fullHeight: 25,
-                  aspectRatio: 1.72
-                }}
-              />
-
-              <Frame3Icon
-                className={classNames(projectcss.all, sty.svg___0SoxB)}
-                role={"img"}
-              />
             </div>
-          </div>
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <div className={classNames(projectcss.all, sty.freeBox__kxE9J)}>
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.freeBox__sAv6Q)}>
+                  {(
+                    hasVariant(globalVariants, "desktop", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__nz0M8)}
+                      displayHeight={"37px" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"42px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/cloud_wealth/images/frame5.svg",
+                        fullWidth: 42,
+                        fullHeight: 37,
+                        aspectRatio: 1.135135
+                      }}
+                    />
+                  ) : null}
 
-          <Footer
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames("__wab_instance", sty.footer)}
-          />
+                  <Group10Icon
+                    className={classNames(projectcss.all, sty.svg__gPuq7)}
+                    role={"img"}
+                  />
 
-          <CwFooter
-            data-plasmic-name={"cwFooter"}
-            data-plasmic-override={overrides.cwFooter}
-            className={classNames("__wab_instance", sty.cwFooter)}
-          />
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___8Py)}
+                    displayHeight={"37px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"42px" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/cloud_wealth/images/frame5.svg",
+                      fullWidth: 42,
+                      fullHeight: 37,
+                      aspectRatio: 1.135135
+                    }}
+                  />
+                </div>
+              ) : null}
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.freeBox__kVd3P)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__xuCmY
+                    )}
+                  >
+                    <React.Fragment>
+                      <React.Fragment>{""}</React.Fragment>
+                      {
+                        <h6
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h6,
+                            projectcss.__wab_text,
+                            sty.h6___9M9LJ
+                          )}
+                        >
+                          {"Sales & Development"}
+                        </h6>
+                      }
+                      <React.Fragment>{"sales@cloudwealth.io"}</React.Fragment>
+                    </React.Fragment>
+                  </div>
+                </div>
+              ) : null}
+            </div>
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : false
+          ) ? (
+            <div className={classNames(projectcss.all, sty.freeBox___6YZmm)}>
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.freeBox__zxw6)}>
+                  {(
+                    hasVariant(globalVariants, "desktop", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img___1Dg3B)}
+                      displayHeight={"37px" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"42px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/cloud_wealth/images/frame5.svg",
+                        fullWidth: 42,
+                        fullHeight: 37,
+                        aspectRatio: 1.135135
+                      }}
+                    />
+                  ) : null}
+                  {(
+                    hasVariant(globalVariants, "desktop", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__j6UAn)}
+                      displayHeight={"25px" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"43px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/cloud_wealth/images/frame4.svg",
+                        fullWidth: 43,
+                        fullHeight: 25,
+                        aspectRatio: 1.72
+                      }}
+                    />
+                  ) : null}
+
+                  <Group10Icon
+                    className={classNames(projectcss.all, sty.svg__kQoa3)}
+                    role={"img"}
+                  />
+
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___34Uk)}
+                    displayHeight={"25px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"43px" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/cloud_wealth/images/frame4.svg",
+                      fullWidth: 43,
+                      fullHeight: 25,
+                      aspectRatio: 1.72
+                    }}
+                  />
+                </div>
+              ) : null}
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.freeBox__n50E)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__gqqIy
+                    )}
+                  >
+                    {hasVariant(globalVariants, "desktop", "mobileOnly") ? (
+                      <React.Fragment>
+                        <React.Fragment>{""}</React.Fragment>
+                        {
+                          <h6
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.h6,
+                              projectcss.__wab_text,
+                              sty.h6__uiYqa
+                            )}
+                          >
+                            {hasVariant(globalVariants, "desktop", "mobileOnly")
+                              ? "Financial Advisors"
+                              : "Financial Advisors"}
+                          </h6>
+                        }
+                        <React.Fragment>
+                          {"advisors@cloudwealth.io"}
+                        </React.Fragment>
+                      </React.Fragment>
+                    ) : (
+                      <React.Fragment>
+                        <React.Fragment>{""}</React.Fragment>
+                        {
+                          <h6
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.h6,
+                              projectcss.__wab_text,
+                              sty.h6__uiYqa
+                            )}
+                          >
+                            {hasVariant(globalVariants, "desktop", "mobileOnly")
+                              ? "Financial Advisors"
+                              : "Financial Advisors"}
+                          </h6>
+                        }
+                        <React.Fragment>
+                          {"sales@cloudwealth.io"}
+                        </React.Fragment>
+                      </React.Fragment>
+                    )}
+                  </div>
+                </div>
+              ) : null}
+            </div>
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : false
+          ) ? (
+            <div className={classNames(projectcss.all, sty.freeBox__asPjQ)}>
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.freeBox__uF0W)}>
+                  {(
+                    hasVariant(globalVariants, "desktop", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <p.PlasmicImg
+                      alt={""}
+                      className={classNames(sty.img__i839H)}
+                      displayHeight={"37px" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"100%" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"42px" as const}
+                      loading={"lazy" as const}
+                      src={{
+                        src: "/plasmic/cloud_wealth/images/frame5.svg",
+                        fullWidth: 42,
+                        fullHeight: 37,
+                        aspectRatio: 1.135135
+                      }}
+                    />
+                  ) : null}
+                  {(
+                    hasVariant(globalVariants, "desktop", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <Group10Icon
+                      className={classNames(projectcss.all, sty.svg__tPqSy)}
+                      role={"img"}
+                    />
+                  ) : null}
+
+                  <Group10Icon
+                    className={classNames(projectcss.all, sty.svg__i6Wpo)}
+                    role={"img"}
+                  />
+
+                  <Frame3Icon
+                    className={classNames(projectcss.all, sty.svg__kloO4)}
+                    role={"img"}
+                  />
+                </div>
+              ) : null}
+              {(
+                hasVariant(globalVariants, "desktop", "mobileOnly")
+                  ? true
+                  : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.freeBox__iJQhG)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__grZz
+                    )}
+                  >
+                    {hasVariant(globalVariants, "desktop", "mobileOnly") ? (
+                      <React.Fragment>
+                        <React.Fragment>{""}</React.Fragment>
+                        {
+                          <h6
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.h6,
+                              projectcss.__wab_text,
+                              sty.h6__lf3He
+                            )}
+                          >
+                            {hasVariant(globalVariants, "desktop", "mobileOnly")
+                              ? "Customer Care"
+                              : "Customer Care"}
+                          </h6>
+                        }
+                        <React.Fragment>{"care@cloudwealth.io"}</React.Fragment>
+                      </React.Fragment>
+                    ) : (
+                      <React.Fragment>
+                        <React.Fragment>{""}</React.Fragment>
+                        {
+                          <h6
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.h6,
+                              projectcss.__wab_text,
+                              sty.h6__lf3He
+                            )}
+                          >
+                            {hasVariant(globalVariants, "desktop", "mobileOnly")
+                              ? "Customer Care"
+                              : "Customer Care"}
+                          </h6>
+                        }
+                        <React.Fragment>
+                          {"sales@cloudwealth.io"}
+                        </React.Fragment>
+                      </React.Fragment>
+                    )}
+                  </div>
+                </div>
+              ) : null}
+            </div>
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__eBpRb
+              )}
+            >
+              {"Enter some text"}
+            </div>
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : false
+          ) ? (
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__vS9Ll
+              )}
+            >
+              {hasVariant(globalVariants, "desktop", "mobileOnly") ? (
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#197BD2" }}
+                  >
+                    {"Reach Out"}
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#197BD2" }}
+                  >
+                    {"to Us "}
+                  </span>
+                  <React.Fragment>{""}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#A8A0D9" }}
+                  >
+                    {"Today"}
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#A8A0D9" }}
+                  >
+                    {""}
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  {(
+                    hasVariant(globalVariants, "desktop", "mobileOnly")
+                      ? true
+                      : true
+                  ) ? (
+                    <blockquote
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.blockquote___1WOpI
+                      )}
+                    >
+                      {hasVariant(globalVariants, "desktop", "mobileOnly") ? (
+                        <React.Fragment>
+                          <React.Fragment>{""}</React.Fragment>
+                          {(
+                            hasVariant(globalVariants, "desktop", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <span
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.span,
+                                projectcss.__wab_text,
+                                projectcss.plasmic_default__inline,
+                                sty.span___2Ncuz
+                              )}
+                            >
+                              <React.Fragment>
+                                <span
+                                  className={
+                                    "plasmic_default__all plasmic_default__span"
+                                  }
+                                  style={{ color: "#000000" }}
+                                >
+                                  {
+                                    "Let’s connect and discuss your financial options and plan for your future as well as the future of the next generations to come."
+                                  }
+                                </span>
+                              </React.Fragment>
+                            </span>
+                          ) : null}
+                          <React.Fragment>{""}</React.Fragment>
+                        </React.Fragment>
+                      ) : (
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#000000" }}
+                          >
+                            {
+                              "Let’s connect and discuss your financial options and plan for your future as well as the future of the next generations to come."
+                            }
+                          </span>
+                        </React.Fragment>
+                      )}
+                    </blockquote>
+                  ) : null}
+                  <React.Fragment>{""}</React.Fragment>
+                </React.Fragment>
+              ) : (
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#197BD2" }}
+                  >
+                    {"Reach Out"}
+                  </span>
+                  <React.Fragment>{"\n"}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#197BD2" }}
+                  >
+                    {"to Us "}
+                  </span>
+                  <React.Fragment>{""}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "#A8A0D9" }}
+                  >
+                    {"Today"}
+                  </span>
+                </React.Fragment>
+              )}
+            </div>
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <FooterDesktop1
+              data-plasmic-name={"footerDesktop1"}
+              data-plasmic-override={overrides.footerDesktop1}
+              className={classNames("__wab_instance", sty.footerDesktop1)}
+            />
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <PrivacyPolicyLinks
+              data-plasmic-name={"privacyPolicyLinks"}
+              data-plasmic-override={overrides.privacyPolicyLinks}
+              className={classNames("__wab_instance", sty.privacyPolicyLinks)}
+            />
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <FooterDisclaimer
+              data-plasmic-name={"footerDisclaimer"}
+              data-plasmic-override={overrides.footerDisclaimer}
+              className={classNames("__wab_instance", sty.footerDisclaimer)}
+            />
+          ) : null}
+          {(
+            hasVariant(globalVariants, "desktop", "mobileOnly") ? true : true
+          ) ? (
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__ps8N2
+              )}
+            >
+              {""}
+            </div>
+          ) : null}
         </p.Stack>
       </div>
     </React.Fragment>
@@ -799,19 +1887,22 @@ const PlasmicDescendants = {
     "layer1",
     "rectangle",
     "rectangle26",
-    "span",
     "frame27",
     "rectangle31",
     "rectangle32",
     "button3",
     "button4",
-    "button",
     "button2",
-    "h1",
     "pill",
     "pill2",
     "footer",
-    "cwFooter"
+    "cwFooter",
+    "rectangle27",
+    "pill3",
+    "pill4",
+    "footerDesktop1",
+    "privacyPolicyLinks",
+    "footerDisclaimer"
   ],
   header: ["header"],
   mainSection: [
@@ -824,15 +1915,12 @@ const PlasmicDescendants = {
     "layer1",
     "rectangle",
     "rectangle26",
-    "span",
     "frame27",
     "rectangle31",
     "rectangle32",
     "button3",
     "button4",
-    "button",
     "button2",
-    "h1",
     "pill",
     "pill2"
   ],
@@ -845,15 +1933,12 @@ const PlasmicDescendants = {
     "layer1",
     "rectangle",
     "rectangle26",
-    "span",
     "frame27",
     "rectangle31",
     "rectangle32",
     "button3",
     "button4",
-    "button",
     "button2",
-    "h1",
     "pill",
     "pill2"
   ],
@@ -871,19 +1956,22 @@ const PlasmicDescendants = {
   layer1: ["layer1", "rectangle", "rectangle26"],
   rectangle: ["rectangle", "rectangle26"],
   rectangle26: ["rectangle26"],
-  span: ["span"],
   frame27: ["frame27"],
   rectangle31: ["rectangle31"],
   rectangle32: ["rectangle32", "button3", "button4"],
   button3: ["button3", "button4"],
   button4: ["button4"],
-  button: ["button", "button2"],
   button2: ["button2"],
-  h1: ["h1"],
   pill: ["pill", "pill2"],
   pill2: ["pill2"],
   footer: ["footer"],
-  cwFooter: ["cwFooter"]
+  cwFooter: ["cwFooter"],
+  rectangle27: ["rectangle27"],
+  pill3: ["pill3", "pill4"],
+  pill4: ["pill4"],
+  footerDesktop1: ["footerDesktop1"],
+  privacyPolicyLinks: ["privacyPolicyLinks"],
+  footerDisclaimer: ["footerDisclaimer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -900,19 +1988,22 @@ type NodeDefaultElementType = {
   layer1: "div";
   rectangle: "div";
   rectangle26: "div";
-  span: "span";
   frame27: "div";
   rectangle31: "div";
   rectangle32: "div";
   button3: "div";
   button4: "div";
-  button: "div";
   button2: "div";
-  h1: "h1";
   pill: "div";
   pill2: "div";
   footer: typeof Footer;
   cwFooter: typeof CwFooter;
+  rectangle27: "div";
+  pill3: "div";
+  pill4: "div";
+  footerDesktop1: typeof FooterDesktop1;
+  privacyPolicyLinks: typeof PrivacyPolicyLinks;
+  footerDisclaimer: typeof FooterDisclaimer;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -986,19 +2077,22 @@ export const PlasmicContact = Object.assign(
     layer1: makeNodeComponent("layer1"),
     rectangle: makeNodeComponent("rectangle"),
     rectangle26: makeNodeComponent("rectangle26"),
-    span: makeNodeComponent("span"),
     frame27: makeNodeComponent("frame27"),
     rectangle31: makeNodeComponent("rectangle31"),
     rectangle32: makeNodeComponent("rectangle32"),
     button3: makeNodeComponent("button3"),
     button4: makeNodeComponent("button4"),
-    button: makeNodeComponent("button"),
     button2: makeNodeComponent("button2"),
-    h1: makeNodeComponent("h1"),
     pill: makeNodeComponent("pill"),
     pill2: makeNodeComponent("pill2"),
     footer: makeNodeComponent("footer"),
     cwFooter: makeNodeComponent("cwFooter"),
+    rectangle27: makeNodeComponent("rectangle27"),
+    pill3: makeNodeComponent("pill3"),
+    pill4: makeNodeComponent("pill4"),
+    footerDesktop1: makeNodeComponent("footerDesktop1"),
+    privacyPolicyLinks: makeNodeComponent("privacyPolicyLinks"),
+    footerDisclaimer: makeNodeComponent("footerDisclaimer"),
 
     // Metadata about props expected for PlasmicContact
     internalVariantProps: PlasmicContact__VariantProps,

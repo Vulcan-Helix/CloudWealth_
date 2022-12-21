@@ -41,6 +41,7 @@ import FooterDesktop1 from "../../FooterDesktop1"; // plasmic-import: B3-gyon6yF
 import PrivacyPolicyLinks from "../../PrivacyPolicyLinks"; // plasmic-import: fiOxnTwhXt/component
 import FooterLine from "../../FooterLine"; // plasmic-import: gE7AkFiVSK/component
 import Disclaimer from "../../Disclaimer"; // plasmic-import: 2ULwZ9_GVV/component
+import FooterDisclaimer from "../../FooterDisclaimer"; // plasmic-import: D8imCi-mX6/component
 import CtaBlock from "../../CtaBlock"; // plasmic-import: JgQ-Rg7b-gm-q/component
 
 import { useScreenVariants as useScreenVariantshT8MqvJo0QuvrA } from "./PlasmicGlobalVariant__Desktop"; // plasmic-import: hT8MQVJo0quvrA/globalVariant
@@ -92,6 +93,7 @@ export type PlasmicHomepage__OverridesType = {
   privacyPolicyLinks?: p.Flex<typeof PrivacyPolicyLinks>;
   footerLine?: p.Flex<typeof FooterLine>;
   disclaimer?: p.Flex<typeof Disclaimer>;
+  footerDisclaimer?: p.Flex<typeof FooterDisclaimer>;
   ctaBlock?: p.Flex<typeof CtaBlock>;
 };
 
@@ -1547,17 +1549,11 @@ function PlasmicHomepage__RenderFunc(props: {
                   ? true
                   : false
               ) ? (
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__qs4Pt
-                  )}
-                >
-                  {
-                    "Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures. Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate integrated processes through technically sound intellectual capital. "
-                  }
-                </div>
+                <FooterDisclaimer
+                  data-plasmic-name={"footerDisclaimer"}
+                  data-plasmic-override={overrides.footerDisclaimer}
+                  className={classNames("__wab_instance", sty.footerDisclaimer)}
+                />
               ) : null}
             </div>
 
@@ -1693,6 +1689,7 @@ const PlasmicDescendants = {
     "privacyPolicyLinks",
     "footerLine",
     "disclaimer",
+    "footerDisclaimer",
     "ctaBlock"
   ],
   header: ["header"],
@@ -1725,7 +1722,8 @@ const PlasmicDescendants = {
     "footerDesktop1",
     "privacyPolicyLinks",
     "footerLine",
-    "disclaimer"
+    "disclaimer",
+    "footerDisclaimer"
   ],
   yourPersonalVirtualFamilyOffice: [
     "yourPersonalVirtualFamilyOffice",
@@ -1751,6 +1749,7 @@ const PlasmicDescendants = {
   privacyPolicyLinks: ["privacyPolicyLinks"],
   footerLine: ["footerLine"],
   disclaimer: ["disclaimer"],
+  footerDisclaimer: ["footerDisclaimer"],
   ctaBlock: ["ctaBlock"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -1781,6 +1780,7 @@ type NodeDefaultElementType = {
   privacyPolicyLinks: typeof PrivacyPolicyLinks;
   footerLine: typeof FooterLine;
   disclaimer: typeof Disclaimer;
+  footerDisclaimer: typeof FooterDisclaimer;
   ctaBlock: typeof CtaBlock;
 };
 
@@ -1870,6 +1870,7 @@ export const PlasmicHomepage = Object.assign(
     privacyPolicyLinks: makeNodeComponent("privacyPolicyLinks"),
     footerLine: makeNodeComponent("footerLine"),
     disclaimer: makeNodeComponent("disclaimer"),
+    footerDisclaimer: makeNodeComponent("footerDisclaimer"),
     ctaBlock: makeNodeComponent("ctaBlock"),
 
     // Metadata about props expected for PlasmicHomepage
