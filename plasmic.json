@@ -270,19 +270,6 @@
           "componentType": "page"
         },
         {
-          "id": "k6Lj4YrC8Z8wpl",
-          "name": "Pricing",
-          "type": "managed",
-          "projectId": "7iST1GVY7MEDdpjnrPuCNJ",
-          "renderModuleFilePath": "plasmic/cloud_wealth/PlasmicPricing.tsx",
-          "importSpec": {
-            "modulePath": "../pages/pricing.tsx"
-          },
-          "cssFilePath": "plasmic/cloud_wealth/PlasmicPricing.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "9KxG1LQhTfZ-fr",
           "name": "Header",
           "type": "managed",

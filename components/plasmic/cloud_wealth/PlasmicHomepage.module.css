@@ -53,6 +53,14 @@
   max-width: 100%;
   position: relative;
 }
+@media (min-width: 0px) and (max-width: 767px) {
+  .header:global(.__wab_instance) {
+    align-self: flex-start;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+}
 .hero {
   display: flex;
   position: relative;
@@ -169,10 +177,12 @@
 }
 @media (min-width: 0px) and (max-width: 767px) {
   .text__lhZdF {
-    max-width: 310px;
+    max-width: 378px;
     width: 100%;
     margin-top: 34px;
-    margin-right: 97px;
+    margin-right: 7px;
+    padding-right: 0px;
+    text-align: center;
     min-width: 0;
   }
 }
@@ -206,8 +216,8 @@
 }
 @media (min-width: 0px) and (max-width: 767px) {
   .requestADemoInput:global(.__wab_instance) {
-    width: 293px;
-    margin-left: -56px;
+    width: 556px;
+    margin-left: -20px;
   }
 }
 .svg__hpXco {
@@ -253,6 +263,7 @@
     margin-right: 0px;
     width: 174px;
     margin-top: 13px;
+    margin-left: -7px;
   }
 }
 .svg__cOn0D {

@@ -214,7 +214,6 @@ function PlasmicHeader2__RenderFunc(props: {
               sty.link__b68Hj
             )}
             component={Link}
-            href={`/pricing`}
             platform={"nextjs"}
           >
             {false ? (
